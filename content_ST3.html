@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/content_ST3_styles.css">
+
+    <title>Content Page 3</title>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+    </script>
+
+</head>
+<body>
+     
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+    <main id="IDmain">
+        <article class="wrapper">
+
+
+            <!-- darkened image with topic name -->
+            <div class="image-container" id="top-of-the-page">
+                <div class="student-number">
+                    Content Page 3
+                </div>
+                <div class="content-topic">
+                    The Dangers of Overfishing
+                </div>
+                <img src="images/majestic_fishing_boat_with_massive_intricate_nets_cast.webp" class="content-img" alt="A fishing boat with huge nets in the ocean">
+            </div>
+
+            <br><br>
+        
+            <!-- navigation bit -->
+            <div class="headings" >
+                <h3 id="headings-heading">Topics</h3>
+                <hr id="headings-hr">
+                <br>
+                <a href="#topic1" class="inter-link">Declining Fish Populations</a>
+                <br>
+                <a href="#topic2" class="inter-link">Economic and Social Consequences</a>
+                <br>
+                <a href="#topic4" class="inter-link">Disrupting Ocean Ecosystems</a>
+                <br>
+                <a href="#topic3" class="inter-link">Solutions to Overfishing</a>
+                <br>
+            </div>
+
+
+            <br><br>
+            <hr class="after-topics">
+            <br>
+
+
+            <!-- the big container with all the content -->
+            <div class="content">
+
+                <div class="content1">
+
+                    <h3 class="topics" id="topic1">Declining Fish Populations</h3>
+                    
+                    <img class="content-images" id="img1" src="images/An_underwater_image.jpg" alt="An underwater image showing a noticeably sparse fish population">
+                    
+                    <p>
+                        Overfishing has caused fish populations to plummet worldwide, leading to severe disruptions in marine ecosystems. Many species, such as tuna, cod, and haddock, have been overexploited to the point where their numbers have dropped by more than 90% in the last few decades. This decline occurs because industrial fishing methods, such as bottom trawling and large-scale netting, remove fish at a faster rate than they can reproduce.
+                    </p>
+                    <p>
+                        As a result, fish stocks struggle to recover, creating a dangerous cycle of depletion. The consequences extend beyond just the fish population—predators like sharks, dolphins, and seabirds suffer as their primary food source becomes scarce. Entire food chains become imbalanced, and ecosystems that once thrived with marine biodiversity turn into barren waters with little life remaining.
+                    </p>
+                    <p>
+                        Scientists warn that if current fishing rates continue, some of the most commonly consumed fish species could disappear completely, making sustainable seafood a thing of the past.
+                    </p>
+
+                </div>
+
+
+                <br>
+                <hr class="after-topics" id="content1-hr">
+
+                
+                <div class="content2">
+
+                    <h3 class="topics" id="topic2">Economic and Social Consequences</h3>
+
+                    <p>
+                        Overfishing has led to severe economic and social challenges, particularly for communities and industries that depend on marine resources. The three most pressing consequences are:
+                    </p>
+
+                    <img class="content-images" id="img2" src="images/A_picture_of_workers_in_a_seafood.png" alt="A picture of workers in a seafood processing plant standing idle or working with fewer products.">
+
+                    <h2 class="sub-headings">Loss of Livelihoods</h2>
+                    <ul>
+                        <li>
+                            The decline in fish populations has had a devastating impact on millions of people who rely on fishing as their primary source of income.
+                        </li>
+                        <li>
+                            As fish stocks continue to shrink, small-scale fishers find it increasingly difficult to make a living, often struggling to catch enough fish to cover their daily expenses.
+                        </li>
+                        <li>
+                            Many are forced to spend more time at sea and invest in costly equipment, yet their earnings continue to decline, pushing them out of business and into financial hardship.
+                        </li>
+                    </ul>
+
+                    <h2 class="sub-headings">Rising Seafood Prices</h2>
+                    <ul>
+                        <li>
+                            As fish populations continue to decline due to overfishing, the availability of seafood in markets decreases, causing prices to rise significantly.
+                        </li>
+                        <li>
+                            This increase in cost has a severe impact on lower-income communities, where fish is a crucial and often primary source of protein.
+                        </li>
+                        <li>
+                            Many families struggle to afford nutritious seafood meals, leading to dietary deficiencies and forcing them to seek cheaper, less healthy alternatives.
+                        </li>
+                    </ul>
+
+                    <h2 class="sub-headings">Job Losses in Related Industries</h2>
+                    <ul>
+                        <li>
+                            The fishing industry is not just limited to those who catch fish; it also supports millions of jobs in processing, transportation, and seafood sales.
+                        </li>
+                        <li>
+                            When fish stocks decline due to overfishing, these interconnected industries face severe setbacks, leading to widespread job losses and financial struggles for countless workers.
+                        </li>
+                        <li>
+                            As unemployment rises in these sectors, entire communities that rely on the fishing economy experience economic instability, making recovery difficult and forcing many to seek alternative and often lower-paying employment opportunities.
+                        </li>
+                    </ul>
+
+                    <h2 class="sub-headings">Increased Competition and Conflict </h2>
+                    <ul>
+                        <li>
+                            As fish populations continue to decline, competition among fishing industries and nations intensifies.
+                        </li>
+                        <li>
+                            Some countries resort to illegal fishing practices or overexploit shared marine areas, which often leads to territorial disputes and escalating political tensions over dwindling resources.
+                        </li>
+                    </ul>
+
+                    <h2 class="sub-headings">Impact on Coastal Communities </h2>
+                    <ul>
+                        <li>
+                            Fishing is a primary source of income for many coastal regions, but as fish stocks deplete, these communities face severe financial strain. 
+                        </li>
+                        <li>
+                            The loss of income, rising unemployment, and reduced access to food create widespread poverty and food insecurity, leading to social challenges and instability.
+                        </li>
+                    </ul>
+
+
+                    <br>
+
+                </div>
+
+
+                <hr class="after-topics" id="content2-hr">
+
+                
+
+                <div class="content4">
+
+                    <h3 class="topics" id="topic4">Disrupting Ocean Ecosystems</h3>
+                    
+                    <img class="content-images" id="img4" src="images/Destruction_Of_The_Marine_Ecosystem.jpg" alt="The Destruction Of The Marine Ecosystem">
+                    
+                    <p>
+                        The consequences of overfishing go beyond just fish populations and human economies; it has devastating effects on entire ocean ecosystems. When fish species are removed at unsustainable rates, the balance of marine life is thrown into chaos. 
+                    </p>
+                    <p>
+                        Coral reefs, which depend on certain fish species to control algae growth, begin to die off when those fish disappear. Without predators to regulate populations of smaller species, some marine animals may multiply uncontrollably, leading to an imbalance that affects the entire food web. In some areas, overfishing has led to an increase in jellyfish populations, as their natural predators, such as sea turtles and larger fish, have been significantly reduced. Furthermore, destructive fishing methods like bottom trawling damage the seafloor, destroying essential habitats for marine species.
+                    </p>
+                    <p>
+                        This destruction makes it even harder for fish populations to recover, further accelerating the decline of ocean health. If overfishing continues at its current pace, many marine environments could become lifeless, impacting not only sea life but also human activities that depend on the ocean’s resources.
+                    </p>
+
+                </div>
+                <br>
+
+                <hr class="after-topics" id="content3-hr">
+
+
+                <div class="content3">
+
+                    <h3 id="topic3" class="topics">Solutions to Overfishing</h3>
+
+                    <img class="content-images" id="img3" src="images/marine_restoration_project_The_underwater.jpg" alt=" image of divers planting coral and seagrass beds as part of a marine restoration project. The underwater">
+
+                    <p>
+                        One of the most effective ways to combat overfishing is the establishment of marine protected areas where fishing is either completely banned or strictly regulated. These protected zones give fish populations a chance to recover and restore balance to marine ecosystems. Countries that have implemented such measures have seen remarkable improvements in fish numbers, biodiversity, and overall ocean health. Additionally, enforcing stricter fishing quotas and limiting the use of destructive fishing methods like bottom trawling can help ensure that fish stocks are harvested at sustainable levels. Governments and international organizations play a crucial role in enforcing these regulations and ensuring that illegal, unreported, and unregulated fishing activities are minimized. By prioritizing conservation and long-term sustainability, policymakers can help protect marine life for future generations.
+                    </p>
+                    <p>
+                        Another key solution is promoting sustainable fishing practices and responsible consumer choices. Many fisheries are now adopting eco-friendly methods such as pole-and-line fishing, which significantly reduces bycatch and prevents unnecessary harm to non-target species. Consumers also play a powerful role by choosing seafood that is certified by organizations like the Marine Stewardship Council (MSC) or the Aquaculture Stewardship Council (ASC). These certifications ensure that the fish have been sourced responsibly without contributing to the depletion of wild populations. Raising awareness about sustainable seafood choices through education campaigns and eco-labeling can help shift market demand toward ethical fishing practices. When consumers make informed decisions, they create economic pressure that encourages industries to adopt more sustainable operations. 
+                    </p>
+                    <p>
+                        Technological advancements and scientific research also offer promising solutions to overfishing. Innovations such as satellite monitoring and AI-driven data analysis allow authorities to track illegal fishing activities in real-time, improving law enforcement efforts in marine territories. Developing alternative food sources, such as plant-based and lab-grown seafood, could also reduce pressure on wild fish populations. Additionally, restoring damaged marine habitats, such as coral reefs and seagrass beds, supports fish reproduction and enhances biodiversity. By combining these scientific approaches with strong international cooperation, it is possible to create a future where marine ecosystems thrive, and fish populations can sustainably support both nature and human communities.
+                    </p>
+
+                    <br>
+                    
+                    <h2 class="sub-headings">Conclusion</h2>
+                    
+                    <p>
+                        Overfishing is a critical issue that threatens the health of our oceans, global food security, and the livelihoods of millions of people. The rapid depletion of fish stocks has devastating consequences for marine ecosystems, economic stability, and coastal communities that rely on fishing for survival. However, with the right policies and sustainable practices, it is possible to reverse the damage. Governments must enforce strict fishing quotas, expand marine protected areas, and crack down on illegal fishing to ensure that fish populations can recover. At the same time, individuals can make a difference by choosing sustainable seafood and raising awareness about the importance of ocean conservation. The future of marine life depends on collective action, and only by working together can we protect our oceans for generations to come. If overfishing is not addressed, the consequences will be irreversible, leading to the collapse of marine ecosystems and the loss of one of the world’s most important natural resources. The time to act is now, before the damage becomes too great to repair.
+                    </p>
+
+                </div>
+
+
+                <br>
+                <hr class="after-topics">
+                <br>
+
+
+            </div>
+            
+
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST3.html">Student 3's editor page</a>
+            <br>
+            <a href="validation_ST3.html">Student 3's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

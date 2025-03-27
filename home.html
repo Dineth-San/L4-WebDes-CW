@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/home_styles.css">
+
+    <title>Home page</title>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+
+        function explore(){
+            window.location.href = "#about-us"
+        }
+
+        function sitemap(){
+            window.location.href = "sitemap.html"
+        }
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link active-page"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+
+    <main id="IDmain">
+        <article class="wrapper">
+            <section id="landing">
+                <video autoplay muted loop id="landing-video">
+                    <source src="images/192057-891655449_small.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="landing-content">
+                    <h1>"Protect Our Oceans, Preserve Our Future"</h1>
+                    <br>
+                    <button class="view-project" id="intro-button" onclick="explore()">Explore Our Page!</button>
+                </div>
+            </section>
+
+            <section id="about-us">
+                <div class="about-us-container">
+                    <div class="text-div">
+                        <h2 class="big-heading" id="about-us-heading">Committed to Protecting Life Below Water</h2>
+                        <p class="about-us-text">
+                            Welcome to our website, a platform dedicated to protecting and preserving life below water. Our oceans are the lifeblood of our planet, supporting countless species and regulating our climate. Yet, they face growing threats from pollution, overfishing, and climate change. Our mission is to raise awareness, inspire action, and drive meaningful change to restore and safeguard marine ecosystems.
+                        </p>
+                        <button class="view-project" onclick="sitemap()">Visit Our Sitemap</button>
+                    </div> 
+                    <div class="image-div">
+                        <img src="images/web_CW_logo.png" alt="LOGO" id="about-us-logo">
+                    </div>
+                </div>
+            </section>
+
+            <h1 class="big-heading" >Our Missions</h1>
+            <br>
+            <div class="mission">
+                <div class="card">
+                    <h3>Education & Awareness</h3>
+                    <img src="images/education.png" alt="Education" class="mission-image">
+                    
+                    <p class="program-description">
+                        We highlight advancements in marine research, sustainable fishing, and conservation efforts. Scientists work to protect ecosystems, monitor endangered species, and restore coral reefs, inspiring support for ocean sustainability.
+                    </p>
+                    <div class="card-buttons">
+                        <button class="view-project">Learn More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Community Engagement</h3>
+                    <img src="images/protecting-marine-life.png" alt="Education" class="mission-image">
+                    
+                    <p class="program-description">
+                        We build a global community of ocean advocates by encouraging small actions with impact. Reducing plastic, toxins, choosing sustainable seafood, and joining cleanups help protect marine life and inspire ocean-friendly habits.
+                    </p>
+                    <div class="card-buttons">
+                        <button class="view-project">Learn More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Technology & Innovation</h3>
+                    <img src="images/community.png" alt="Education" class="mission-image">
+                    
+                    <p class="program-description">
+                        We unite ocean advocates by promoting small actions with lasting impact, such as reducing plastic waste, choosing sustainable seafood, and joining cleanups, fostering ocean-friendly habits through awareness and local initiatives.
+                    </p>
+                    <div class="card-buttons">
+                        <button class="view-project">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <section id="section2">
+                <h1 class="big-heading" id="content-page-headings">Content Pages</h1>
+                <div id="cover-tile">
+                    <div class="container1">
+                        <div class="student-card">
+                            <img class="student-image" src="images/plastic_waste.png" alt="student1"><br>
+                            <div class="banner">
+                                Student 1: Content Page 
+                                <br> 
+                                <a href="content_ST1.html">Plastic Waste</a>
+                            </div>
+                        </div>
+                        <div class="student-card">
+                            <img class="student-image" src="images/corals.jpg" alt="Coral Reef"><br>
+                            <div class="banner">
+                                Student 2: Content Page
+                                <br>
+                                <a href="content_ST2.html">Coral Reef</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <br><br>
+                        <div class="student-card">
+                            <img class="student-image" src="images/content-3-img.jfif" alt="student3"><br>
+                            <div class="banner">
+                                Student 3: Content Page
+                                <br> 
+                                <a href="content_ST3.html">Overfishing</a>
+                            </div>
+                        </div>
+                        <div class="student-card">
+                            <img class="student-image" src="images/mangrovecover.jpg" alt="student4"><br>
+                            <div class="banner">
+                                Student 4: Content Page
+                                <br> 
+                                <a href="content_ST4.html">Mangroves</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST2.html">Student 2's editor page</a>
+            <br>
+            <a href="validation_ST2.html">Student 2's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

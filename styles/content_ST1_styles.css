@@ -1,0 +1,290 @@
+/* colors when needed.
+    #1a3e5d - dark blue
+    #4b8da8 - blue
+    #a3d6d9 - light blue
+    #e1f6f4 - very light blue
+    white and black
+*/
+
+
+/* -----------------general css -------------------------*/
+html {
+    scroll-padding-top: 75px;
+}
+#go-to-top-link{
+    margin-left: 15%;
+}
+
+
+
+
+
+/* ----------------introduction to the page----------------- */
+.image-container::before {
+    content: "";
+    position: absolute;
+    margin-top: 202px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    pointer-events: none;
+}
+.student-number{
+    position: absolute;
+    color: white; 
+    font-size: 60px;
+    font-weight: bold; 
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15%;
+}
+.content-topic{
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 22.5%;
+}
+.content-img{
+    width: 100%;
+    height: 650px;
+}
+.after-topics{
+    width: 95%;
+    height: 2px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+/* ----------------inter links css------------------- */
+.headings{
+    width: 40%;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 60px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 30px;
+    box-shadow:  4px 8px rgba(0, 0, 0, 0.1)
+
+}
+
+#headings-heading{
+    font-size: 35px;
+}
+#headings-hr{
+    background-color: black;
+    height: 1px;
+}
+.inter-link{
+    font-size: 20px;
+    color: #1a3e5d;
+    font-weight: normal;
+    transition: .3s;
+}
+.inter-link:hover{
+    transition: 0.3s;
+    color: #4b8da8;
+    text-decoration: underline;
+}
+#explanation{
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+/* ------------- content css----------------- */
+.content{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.content1{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.content2{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+    background-color: white;
+
+}
+
+
+.content3{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+
+
+/* ----------- texts */
+.topics{
+    font-size: 30px;
+    color: #1a3e5d;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+.sub-headings{
+    font-size: 25px;
+    color: #4b8da8;
+}
+
+
+
+
+/* -------------------- lists */
+ul{
+    font-size: 20px;
+}
+li{
+    margin-bottom: 2px;
+}
+
+
+
+/* --------------------hr tags */
+#content2-hr{
+    margin-top: 0px;
+}
+#content1-hr{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+/* --------------------images */
+.content-images{
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius:25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9)
+}
+#img1{
+    float: right;
+    margin:20px;
+    margin-right: 0px;
+}
+#img3{
+    float: right;
+    margin:20px;
+    margin-right: 0px;
+}
+#img2{
+    float: left;
+    margin:20px;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+/* New Styles */
+.go-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #1a3e5d;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.action-card {
+    background: #e1f6f4;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(26,62,93,0.1);
+}
+
+.content4 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#img4 {
+    float: left;
+    margin: 20px 30px 20px 0;
+}
+
+/* ------------------- go to top button */
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1000;
+}
+        
+.top a {
+    padding: 15px 30px; 
+    background-color: #4b8da8; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    font-weight: bold; 
+}
+
+.top a:hover {
+    background-color: #1a3e5d; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}

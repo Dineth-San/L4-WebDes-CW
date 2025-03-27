@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/content_ST2_styles.css">
+
+    <title>Content Page 2</title>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+    </script>
+
+</head>
+<body>
+     
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+    <main id="IDmain">
+        <article class="wrapper">
+            <div class="image-container" id="top-of-the-page">
+                <div class="student-number">
+                    Content Page 2
+                </div>
+                <div class="content-topic">
+                    Coral Reefs
+                </div>
+                <img src="images/corals.jpg" class="content-img" alt="corals">
+            </div>
+
+            <br><br>
+        
+            <div class="headings" >
+                <h1 class="big-heading">Topics</h1>
+                <hr id="headings-hr">
+                <br>
+                <a href="#topic1" class="inter-link">The Ecological Importance of Coral Reefs</a>
+                <br>
+                <a href="#topic2" class="inter-link">Threats to Coral Reefs</a>
+                <br>
+                <a href="#topic3" class="inter-link">Solutions to Protect Coral Reefs</a>
+                <br>
+            </div>
+
+
+            <br><br>
+            <hr class="after-topics">
+            <br>
+
+
+            <div class="content">
+
+                <div class="content1">
+
+                    <h1  class="big-heading" id="topic1">The Ecological Importance of Coral Reefs</h1>
+                    
+                    <img class="content-images" id="img1" src="images/vibrant-corals.jpg" alt="vibrant-corals">
+                    
+                    <p>
+                        Coral reefs are among the most diverse and essential ecosystems on Earth. These underwater structures, built over thousands of years by tiny coral polyps, provide a home to nearly 25% of all marine species. Fish, crustaceans, sea turtles, and even sharks rely on coral reefs for shelter and food. The complex and colorful reef systems serve as breeding and nursery grounds for many marine creatures, ensuring the survival of numerous species. Without coral reefs, many oceanic species would struggle to find food and protection, leading to devastating consequences for marine biodiversity.
+                    </p>
+                    <p>
+                        Beyond supporting marine life, coral reefs play a crucial role in protecting coastlines. They act as natural barriers that reduce the impact of waves, storms, and even tsunamis. By absorbing wave energy, reefs help prevent coastal erosion and protect human settlements along shorelines. In many tropical regions, communities depend on coral reefs as their first line of defense against extreme weather events. Without coral reefs, coastal regions would face greater damage from hurricanes, rising sea levels, and flooding.
+                    </p>
+                    <p>
+                        Additionally, coral reefs contribute to the global carbon cycle. They help regulate ocean chemistry by absorbing carbon dioxide and promoting the growth of marine organisms that store carbon in their skeletons. This natural process plays a role in mitigating climate change. However, as carbon emissions increase, the ocean becomes more acidic, making it harder for corals to build their calcium carbonate structures. Protecting coral reefs is not just about saving marine life—it is also about preserving a delicate balance that affects the entire planet.
+                    </p>
+
+                </div>
+
+
+                <br>
+                <hr class="after-topics" id="content1-hr">
+
+                
+                <div class="content2">
+
+                    <h1 class="big-heading" id="topic2">Threats to Coral Reefs</h1>
+
+                    <p>
+                        Coral reefs face numerous threats, many of which are caused by human activities. These dangers have led to a significant decline in coral populations worldwide. The three most pressing threats are:
+                    </p>
+
+                    <img class="content-images" id="img2" src="images/polluted-corals.jpg" alt="polluted corals">
+
+                    <h2 class="sub-headings">Climate Change and Coral Bleaching</h2>
+                    <ul>
+                        <li>
+                            Rising ocean temperatures cause corals to expel the algae (zooxanthellae) that give them color and nutrients.
+                        </li>
+                        <li>
+                            This leads to coral bleaching, where corals turn white and become more vulnerable to disease.
+                        </li>
+                        <li>
+                            If bleaching continues for long periods, corals struggle to recover and may eventually die.
+                        </li>
+                    </ul>
+
+                    <h2 class="sub-headings">Pollution and Habitat Destruction</h2>
+                    <ul>
+                        <li>
+                            Chemicals from agriculture, sewage, and industrial waste pollute the ocean, harming coral growth.
+                        </li>
+                        <li>
+                            Plastic pollution entangles marine life and blocks sunlight needed for photosynthesis in corals.
+                        </li>
+                        <li>
+                            Coastal development and deforestation, increases sediment runoff, which smothers corals and prevents them from receiving adequate sunlight.
+                        </li>
+                    </ul>
+
+                    <h2 class="sub-headings">Overfishing and Unsustainable Practices</h2>
+                    <ul>
+                        <li>
+                            Destructive fishing methods like blast fishing and cyanide fishing destroy coral structures and kill marine species.
+                        </li>
+                        <li>
+                            Overfishing disrupts the balance of reef ecosystems, leading to uncontrolled algae growth that suffocates corals.
+                        </li>
+                        <li>
+                            The aquarium trade removes reef fish and corals, further weakening ecosystems that take years to recover. 
+                        </li>
+                    </ul>
+
+                    <br>
+
+                </div>
+
+
+                <hr class="after-topics" id="content2-hr">
+
+
+                <div class="content3">
+
+                    <h1 id="topic3" class="big-heading">Solutions to Protect Coral Reefs</h1>
+
+                    <img class="content-images" id="img3" src="images/beach-cleaning.jpg" alt="people cleaning a beach">
+
+                    <p>
+                        Despite the numerous threats to coral reefs, there is hope. Conservation efforts, sustainable practices, and policy changes can help preserve these vital ecosystems for future generations. One of the most effective ways to protect coral reefs is through marine protected areas (MPAs). These designated regions restrict harmful activities like overfishing and coastal development, allowing coral ecosystems to recover naturally. Countries that enforce MPAs have seen positive results, with coral populations rebounding and marine life flourishing. Expanding and enforcing these protected zones is crucial for long-term conservation.
+                    </p>
+                    <p>
+                        Another solution is to reduce pollution and carbon emissions. Governments and industries must take steps to limit plastic waste, regulate chemical use, and invest in clean energy. Individuals can also contribute by using reef-safe sunscreens, reducing single-use plastics, and supporting businesses that prioritize sustainability. Climate action is equally important—cutting down on fossil fuel consumption and promoting renewable energy sources can help reduce ocean warming and acidification. 
+                    </p>
+                    <p>
+                        Scientific efforts have also led to coral restoration projects, where scientists grow corals in labs and transplant them into damaged reefs. These projects have had success in areas where natural recovery was unlikely. Additionally, community education and awareness programs encourage local populations to take an active role in coral conservation. The more people understand the value of coral reefs, the more likely they are to protect them.
+                    </p>
+
+                    <br>
+                    
+                    <h2 class="sub-headings">Conclusion</h2>
+                    
+                    <p>
+                        Coral reefs are more than just beautiful underwater landscapes; they are essential for marine biodiversity, coastal protection, and global ecological balance. However, climate change, pollution, and overfishing threaten their survival. By implementing marine protected areas, reducing pollution, and investing in conservation efforts, we can ensure that coral reefs continue to thrive for future generations. The responsibility lies with individuals, governments, and global organizations to take action before it is too late.
+                    </p>
+
+                </div>
+
+
+                <br>
+                <hr class="after-topics">
+                <br>
+
+
+            </div>
+            
+            <p class="top"><a href="#top">Go top</a></p>
+
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST2.html">Student 2's editor page</a>
+            <br>
+            <a href="validation_ST2.html">Student 2's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

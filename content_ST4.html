@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/globalCSS.css" />
+    <link rel="stylesheet" href="styles/content_ST4_styles.css" />
+
+    <title>Content Page 4</title>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let navInHeader = document.getElementById("nav-in-header");
+        let imgInNav = document.getElementById("img-in-nav");
+        let IDmain = document.getElementById("IDmain");
+        let sc = window.scrollY;
+        if (sc > 140) {
+          IDmain.style.marginTop = "60px";
+          imgInNav.style.transition = "0.1s ease-in-out";
+          imgInNav.style.opacity = 1;
+          navInHeader.style.top = 0;
+          navInHeader.style.position = "fixed";
+        } else {
+          IDmain.style.marginTop = "0px";
+          imgInNav.style.opacity = 0;
+          navInHeader.style.position = "relative";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <br>
+      <div id="header-div">
+          <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+          <div class="space1"></div>
+          <h1 id="heading1">Life Below Water</h1>
+      </div>
+      <br>
+      <nav id="nav-in-header">
+          <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+          <span class="nav-link"><a href="home.html">Home</a></span>
+          <span class="nav-link"><a href="team.html">Team</a></span>
+          <span class="nav-link"><a href="table.html">Table</a></span>
+          <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+          <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+          <span class="nav-link"><a href="profile.html">User Profile</a></span>
+          <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+      </nav>
+  </header>
+
+    <main id="IDmain">
+      <article class="wrapper">
+        <!-- darkened image with topic name -->
+        <div class="image-container" id="top-of-the-page">
+          <div class="student-number">Content Page 4</div>
+          <div class="content-topic">The Vital Role of Mangrove Forests</div>
+          <img
+            src="images/mangrovecover.jpg"
+            class="content-img"
+            alt="mangrove photo with roots "
+          />
+        </div>
+
+        <br /><br />
+
+        <!-- navigation bit -->
+        <div class="headings">
+          <h1 id="headings-heading">Topics</h1>
+          <hr id="headings-hr" />
+          <br />
+          <a href="#topic1" class="inter-link"
+            >The Guardians of Coastal Ecosystems</a
+          >
+          <br />
+          <a href="#topic2" class="inter-link"
+            >How Mangroves Combat Climate Change</a
+          >
+          <br />
+          <a href="#topic3" class="inter-link"
+            >The Consequences of Mangrove Deforestation</a
+          >
+          <br />
+        </div>
+
+        <br /><br />
+        <hr class="after-topics" />
+        <br />
+
+        <!-- the big container with all the content -->
+        <div class="content">
+          <div class="content1">
+            <h1 class="topics" id="topic1">
+              The Guardians of Coastal Ecosystems
+            </h1>
+
+            <img
+              class="content-images"
+              id="img1"
+              src="images/mangrove1.jpeg"
+              alt="fish swimming through mangrove roots"
+            />
+
+            <p>
+              Mangrove forests play a crucial role in protecting coastal
+              environments by acting as natural barriers against storms, waves,
+              and rising sea levels. These unique trees, found in tropical and
+              subtropical coastal regions, have complex root systems that
+              stabilize shorelines and reduce erosion. During extreme weather
+              events such as hurricanes and typhoons, mangroves absorb the
+              impact of strong winds and waves, preventing severe flooding and
+              damage to coastal communities.
+            </p>
+            <p>
+              Studies have shown that areas with dense mangrove forests
+              experience significantly lower destruction compared to those
+              without. Additionally, mangroves filter pollutants and excess
+              nutrients from the water, improving water quality and creating a
+              healthier environment for marine life. Their dense roots also
+              serve as nurseries for various species of fish, crabs, and shrimp,
+              ensuring biodiversity and supporting local fisheries. Despite
+              their importance, mangroves are rapidly disappearing due to
+              deforestation, urban expansion, and aquaculture.
+            </p>
+            <p>
+              This loss not only threatens marine ecosystems but also increases
+              the vulnerability of coastal populations to climate-related
+              disasters. Protecting and restoring mangrove forests is essential
+              for maintaining ecological balance and safeguarding coastal
+              communities from the devastating effects of climate change.
+              Investing in conservation efforts will ensure that mangroves
+              continue to provide these vital benefits for generations to come.
+            </p>
+          </div>
+
+          <br />
+          <hr class="after-topics" id="content1-hr" />
+
+          <div class="content2">
+            <h1 class="topics" id="topic2">
+              How Mangroves Combat Climate Change
+            </h1>
+
+            <p>
+              Mangrove forests play a crucial role in mitigating climate change
+              by acting as powerful carbon sinks. They capture and store large
+              amounts of carbon, preventing it from entering the atmosphere. The
+              three key ways mangroves help in fighting climate change are:
+            </p>
+
+            <img
+              class="content-images"
+              id="img2"
+              src="images/mangrove2.jpeg"
+              alt="effect of humans on mangroves"
+            />
+
+            <h2 class="sub-headings">Blue Carbon Storage</h2>
+            <ul>
+              <li>
+                Mangroves absorb and store carbon dioxide more efficiently than
+                terrestrial forests.
+              </li>
+              <li>
+                Their dense root systems trap organic material, storing carbon
+                for centuries in the soil.
+              </li>
+              <li>
+                When mangroves are destroyed, the stored carbon is released back
+                into the atmosphere, accelerating global warming.
+              </li>
+            </ul>
+
+            <h2 class="sub-headings">
+              Coastal Protection and Climate Resilience
+            </h2>
+            <ul>
+              <li>
+                Mangroves act as natural buffers against storm surges, reducing
+                the impact of hurricanes and typhoons.
+              </li>
+              <li>
+                They stabilize shorelines and prevent erosion caused by rising
+                sea levels and extreme weather events.
+              </li>
+              <li>
+                By maintaining healthy coastal ecosystems, mangroves support
+                biodiversity and strengthen climate resilience.
+              </li>
+            </ul>
+
+            <h2 class="sub-headings">
+              Regulation of Water Quality and Temperature
+            </h2>
+            <ul>
+              <li>
+                Mangroves filter pollutants and excess nutrients, improving
+                ocean health and preventing harmful algal blooms.
+              </li>
+              <li>
+                Their shade helps regulate coastal water temperatures, reducing
+                the effects of ocean acidification. By maintaining a stable
+                coastal environment, mangroves protect marine species and
+                fisheries essential for local economies.
+              </li>
+              <li>
+                Preserving and restoring mangrove forests is essential for
+                climate action. Global conservation efforts, reforestation
+                programs, and sustainable management can help ensure that
+                mangroves continue to play their vital role in protecting the
+                planet.
+              </li>
+            </ul>
+
+            <br />
+          </div>
+
+          <hr class="after-topics" id="content2-hr" />
+
+          <div class="content3">
+            <h1 id="topic3" class="topics">
+              The Consequences of Mangrove Deforestation
+            </h1>
+
+            <img
+              class="content-images"
+              id="img3"
+              src="images/mangrove3.jpeg"
+              alt="deforestation of mangroves"
+            />
+
+            <p>
+              The destruction of mangrove forests has devastating consequences
+              for both marine life and human communities. When mangroves are cut
+              down for urban development, agriculture, or shrimp farming,
+              coastal areas lose their natural protection against erosion and
+              storms. This increases the risk of flooding, especially in
+              low-lying regions where rising sea levels are already a major
+              concern.
+            </p>
+            <p>
+              Without mangroves to stabilize the coastline, entire villages and
+              cities can be washed away by strong waves and storm surges.
+              Additionally, the loss of mangroves leads to a decline in
+              biodiversity, as many marine species rely on mangrove roots for
+              shelter and breeding. Fish populations decrease, affecting the
+              livelihoods of fishermen and reducing food security for coastal
+              communities. Another major consequence is the release of carbon
+              dioxide stored in mangrove soils, which accelerates global
+              warming. Scientists warn that if mangrove deforestation continues
+              at its current rate, we could lose these vital ecosystems within
+              the next century.
+            </p>
+            <p>
+              However, hope remains in conservation efforts that aim to protect
+              and restore mangroves worldwide. Governments, environmentalists,
+              and local communities must work together to enforce strict
+              policies, promote reforestation, and educate people on the
+              importance of these forests. Only through collective action can we
+              prevent further destruction and ensure that mangroves continue to
+              safeguard our oceans.
+            </p>
+
+            <br />
+
+            <h2 class="sub-headings">Conclusion</h2>
+
+            <p>
+              Mangrove forests are essential ecosystems that provide immense
+              environmental benefits. They act as natural barriers against
+              coastal erosion, store vast amounts of carbon to combat climate
+              change, and support rich biodiversity. However, human activities
+              such as deforestation, coastal development, and pollution threaten
+              their survival. The loss of mangroves not only endangers marine
+              life but also increases the vulnerability of coastal communities
+              to storms and rising sea levels. To protect these valuable
+              ecosystems, it is crucial to implement conservation efforts,
+              enforce sustainable management practices, and raise awareness
+              about their importance. Governments, organizations, and
+              individuals must work together to restore degraded mangrove
+              forests and prevent further destruction. By safeguarding
+              mangroves, we can ensure a healthier ocean, a more stable climate,
+              and a sustainable future for generations to come.
+            </p>
+          </div>
+
+          <br />
+          <hr class="after-topics" />
+          <br />
+        </div>
+      </article>
+      <p class="top"><a href="#top">Go top</a></p>
+      <!--;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+    </main>
+
+    <!--  FOOTER  -->
+
+    <footer>
+      <div class="footer-div">
+        <img class="logo" src="images/web_CW_logo.png" alt="logo" />
+        <br />
+        <h2 id="footer-heading">Life Below Water</h2>
+      </div>
+      <div class="footer-div">
+        <h3>Editor's pages</h3>
+        <hr />
+        <br />
+        <a href="pageEditor_ST4.html">Student 4's editor page</a>
+        <br />
+        <a href="validation_ST4.html">Student 4's validation page</a>
+      </div>
+      <div class="footer-div">
+        <h3>Useful Links</h3>
+        <hr />
+        <br />
+        <a href="home.html">Home page</a>
+        <br />
+        <a href="team.html">Team page</a>
+        <br />
+        <a href="sitemap.html">Sitemap</a>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <div class="space2">&nbsp;</div>
+      <div class="socials-circle">
+        <a href="https://www.twitter.com/">
+          <img class="socials" src="images/x_logo.png" alt="x" />
+        </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+        <a href="https://www.facebook.com/">
+          <img
+            class="socials"
+            src="images/facebook_logo.png"
+            alt="facebook"
+          />
+        </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+        <a href="https://www.twitter.com/">
+          <img
+            class="socials"
+            src="images/twitter_logo.png"
+            alt="twitter"
+          />
+        </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+        <a href="https://www.instagram.com/">
+          <img
+            class="socials"
+            src="images/instagram_logo.png"
+            alt="instagram"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

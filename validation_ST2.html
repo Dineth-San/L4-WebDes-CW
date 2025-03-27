@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student 2 - Validation Page</title>
+
+    <link rel="stylesheet" href="styles/validation_ST2_styles.css"> 
+    <link rel="stylesheet" href="styles/globalCSS.css">
+
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+
+    </script>
+</head>
+<body>
+    
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+    <main id="IDmain">
+        <article class="wrapper">
+            <section class="profile-header">
+                <div class="profile-content">
+                    <h3>Dineth Kaluarachchi</h3>
+                    <h2>Student 2 - Validation Page</h2>
+                </div>
+            </section>
+
+            <div class="container">
+                <main >
+
+
+                    <section>
+                        <h2 id="homepage" class="big-heading">Home Page validation report</h2>
+                            <p>Using multiple h1 tags can confuse screen readers. It's best to use one h1 for the main title and h2, h3, etc., for subheadings to improve accessibility and SEO.</p> 
+                            <img id="validation-img" src="images/validation-home-page.png">
+                                            
+                            <p><a href="pageEditor_ST2.html#pages">Editor Page Notes</a></p>
+                    </section>
+                    <section>
+                        <h2 id="tablepage" class="big-heading">Table Page validation report</h2>
+                        <p>The warning suggests using only one h1 tag for the main title of the page. Multiple h1 tags can confuse screen readers and affect accessibility. Use h2, h3, etc., for subsections to maintain proper heading hierarchy.</p>
+                            <img id="validation-img" src="images/validation-table-page.png">
+                                            
+                        <p><a href="pageEditor_ST2.html#pages">Editor Page Notes</a></p>
+                    </section></a></p>
+                    <section>
+                        <h2 id="contentpage" class="big-heading">Content Page validation report</h2>
+                        <p>Using multiple h1 tags can confuse screen readers. It's best to use one h1 for the main title and h2, h3, etc., for subsections to improve accessibility and ensure proper content hierarchy.</p>
+                            <img id="validation-img" src="images/validation-content2-page.png">
+                        <p><a href="pageEditor_ST2.html#pages">Editor Page Notes</a></p>
+                    </section></a></p>
+
+
+                    <p class="top"><a href="#top">Go top</a></p>
+                </main>
+
+                <aside>
+                    <h3 class="big-heading">Core pages developed:</h3>
+
+                    <ul class="top-level-ul">
+                        <li>Student 1</li>
+                            <ul class="unfocus"> 
+                                <li><a class="unfocus" href="#splashVal">Splash page </a></li>
+                                <li><a class="unfocus" href="#volunteerVal">Volunteer page </a></li>
+                                <li><a class="unfocus" href="#contentVal">Content page </a></li>
+                            </ul>
+                        <li><b>Student 2</b></li>
+                            <ul>
+                                <li><a href="#homepage">Home page </a></li>
+                                <li><a href="#tablepage">Table page</a></li>
+                                <li><a href="#contentpage">Content page</a></li>
+                            </ul>
+                        <li>Student 3</li>
+                            <ul>
+                                <li><a class="unfocus" href="#">Feedback page</a> </li>
+                                <li><a class="unfocus" href="#">Team page</a></li>
+                                <li><a class="unfocus" href="#">Content page</a></li>
+                            </ul>
+                        <li>Student 4</li>
+                            <ul>
+                                <li><a class="unfocus" href="#">Profile page </a></li>
+                                <li><a class="unfocus" href="#">Sitemap page</a></li>
+                                <li><a class="unfocus" href="#">Content page</a></li>
+                            </ul>
+                    </ul>
+                </aside>
+            </div>
+            </article>
+        </main>
+
+    
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST2.html">Student 2's editor page</a>
+            <br>
+            <a href="validation_ST2.html">Student 2's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+    
+</body>
+</html>

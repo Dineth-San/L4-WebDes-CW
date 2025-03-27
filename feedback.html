@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/globalCSS.css">
+	<link rel="stylesheet" href="styles/feedback_styles.css">
+    <title>feed back form</title>
+	
+	<script>
+		function validation(){
+			var fname = document.getElementById("fname").value
+			var email = document.getElementById("email").value
+			var telep = document.getElementById("telep").value
+
+			var form = document.getElementById("form")
+
+			let fname_box = document.getElementById("fname")
+			let email_box = document.getElementById("email")
+			let telep_box = document.getElementById("telep")
+
+			if(fname == "" || fname == " "){
+				alert("Please enter a valid name")
+				fname_box.style.border = "2px red solid"
+				const style = document.createElement('style');
+				style.textContent = `#fname::placeholder {color: red;}`;
+				document.head.appendChild(style);
+				fname_box.placeholder = "Invalid name. Please enter a valid name";
+				form.action = "new1.html"
+			}
+			if(email == "" || email == " "){
+				alert("Please enter a valid email")
+				email_box.style.border = "2px red solid"
+				const style = document.createElement('style');
+				style.textContent = `#email::placeholder {color: red;}`;
+				document.head.appendChild(style);
+				email_box.placeholder = "Invalid email. Please enter a valid email";
+				form.action = "new1.html"
+			}
+			if(telep.length != 10){
+				alert("The phone number must be 10 digits long")
+				telep_box.style.border = "2px red solid"
+				const style = document.createElement('style');
+				style.textContent = `#telep::placeholder {color: red;}`;
+				document.head.appendChild(style);
+				telep_box.placeholder = "The phone number must be 10 digits long";
+				form.action = "new1.html"
+			} 
+			
+		}
+	</script>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+    </script>
+
+	<script>
+		function resetForm() {
+    document.getElementById('form').reset();
+	}
+
+	</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const now = new Date();
+        const offset = now.getTimezoneOffset() * 60000; // Adjust for timezone
+        const localISOTime = new Date(now - offset).toISOString().slice(0, 16);
+        document.getElementById('datetime').value = localISOTime;
+    });
+</script>
+
+</head>
+<body>
+     
+	<header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link active-page"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+ 
+
+    <main id="IDmain">
+        <article class="wrapper">
+			<br><br>
+			<div class="container">
+			
+			<h4>Feedback form</h4>
+			
+			<form method ="GET" action ="backend.php" id="form">
+			
+			<fieldset>
+				<legend>Personal Details</legend>
+				
+				<div class="Personal-Details">
+				<div class="input-container">
+					<div class="field">
+						<label class="input-label">Full Name:</label>
+						<input class="pdinput" name="fname" id="fname" type="text" aria-label="your name" placeholder="Enter your full name here" required>	
+					</div>
+					
+					<div class="field">
+						<br><br>
+						<label class="input-label">Email Address:</label>
+						<input class="pdinput" name="email" id="email" type="email" aria-label="your e address" placeholder="Enter your email here" required>
+					</div>
+					<div class="field">
+						<br><br>
+						<label class="input-label">Telephone number:</label>
+						<input class="pdinput" name="telep" id="telep" type="tel" aria-label="your number" placeholder="Enter your Telephone number here" required>
+					</div>
+					<div class="field">
+						<br><br>
+						<label class="input-label">Address:</label>
+						<textarea  class="pdinput" name="address" id="address" rows="3" aria-label="your address"   placeholder="Enter your address here"></textarea>
+							
+					</div>
+				</div>
+				</div>
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>Feedback Details</Legend>
+				
+				<div class="Feedback-Details">
+					<p class="fdinput-label">Was this your first time visiting?</p>
+						
+							<label class="fdinput-label"><input class="rbutton" type="radio" name="first_time" value="Yes"> Yes</label>
+							<label class="fdinput-label"><input class="rbutton" type="radio" name="first_time" value="No"> No</label>
+					
+					<br> <br>
+					<label class="fdinput-label" for="category">Feedback Category:</label><br>
+						<select id="category" name="category" class="fdselect" >
+							<option value="general" selected>General</option>
+							<option value="support">Support</option>
+							<option value="complaint">Complaint</option>
+							<option value="technical">Technical</option>
+							<option value="suggestion">Suggestion</option>
+						</select>
+					<br> <br>
+
+					<label class="fdinput-label" for="comment">If you suggest any improvement for our page let us know:</label>
+					<br>
+					<textarea class="fdinput" id="comment" name="comment" maxlength="250" rows="4"  aria-label="your suggestion" placeholder="Enter your comment here" required></textarea>
+					
+					<br><br>
+					<label  class="fdinput-label">Would you like to receive updates about the website and any offers?</label><br>
+					<select id="contact" name="contact" class="fdselect">
+						<option value="email" selected>Via email</option>
+						<option value="sms">Via SMS</option>
+						<option value="no">No</option>
+					</select>
+						
+					<br> <br>
+					<label  class="fdinput-label" for="questions">Do you have any additional questions let us know:</label>
+					<br>
+					<textarea class="fdinput" id="questions" name="questions" maxlength="250" rows="4" aria-label="your questions"  placeholder="Add your massage here" required></textarea>
+					<br><br>
+					<label class="fdinput-label"  for="myCheckbox">I agree to the terms and conditions</label>
+					<input type="checkbox" id="myCheckbox" name="myCheckbox" class="checkb" required>
+					<br>
+					<br>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Additional Details</Legend>
+				
+					<div class="Additional-Details">		
+						<label class="fdinput-label" for="datetime">Preferred Date & Time:</label><br>
+						<input class="adselect" type="datetime-local" id="datetime" name="datetime" >
+						
+						<br><br>
+						<label class="fdinput-label" for="file">Upload a support document:</label><br>
+						<input class="adselect" type="file" id="file" name="file" accept="application/pdf,image/jpeg, image/png">
+					</div>	
+			</fieldset>
+			
+				<fieldset>
+				<legend>Rating</legend>
+					<div class="rating">
+						<button type="button">&#11088;</button>
+						<button type="button">&#11088;</button>
+						<button type="button">&#11088;</button>
+						<button type="button">&#11088;</button>
+						<button type="button">&#11088;</button>
+					</div>
+			</fieldset>
+			
+			<br>
+			<br>
+			<button onclick="validation()" type="submit" class="submit-btn">Submit Feedback</button>
+			<button type="button" onclick="resetForm()" class="reset-btn">Reset</button>
+			<br>
+			<br>
+			
+			
+			
+			</form>
+			</div>
+        </article>
+    </main>
+
+	<footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST3.html">Student 3's editor page</a>
+            <br>
+            <a href="validation_ST3.html">Student 3's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

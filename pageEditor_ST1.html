@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/pageEditor_ST1_styles.css">
+    <title>Editor Page</title>
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+    <main id="IDmain">
+        <article class="editor-container">
+            <!-- Profile Header -->
+            <section class="profile-header">
+                <div class="profile-content">
+                    <h3>Randil Fernando</h3>
+                    <h2>Student 1 - Editor's Page</h2>
+                </div>
+            </section>
+
+            <!-- Completed Tasks -->
+            <section class="content-card">
+                <h2 class="section-title">📋 Completed Tasks</h2>
+                <div class="task-grid">
+                    <!-- Splash Screen -->
+                    <div class="task-card">
+                        <h3>Splash Screen</h3>
+                        <div class="task-preview">
+                            <img src="images/splashscreen.png" alt="Splash Screen Preview">
+                        </div>
+                        <div class="task-details">
+                            <div class="tech-description">
+                                <ul class="bullet-points">
+                                    <li>Animated wave effect</li>
+                                    <li>Fade-in text animation</li>
+                                    <li>Loading spinner</li>
+                                    <li>7-second transition</li>
+                                </ul>
+                                <p class="full-description">
+                                    <b>HTML:</b> Fixed div id = splash with animated SVG wave, text, and loading spinner.
+									<b>CSS: </b> Uses fixed positioning, animations (wave, text fade-in, spinner), and gradients.
+									<b>Logic:</b> Sequential animations with hidden content revealed after animations.
+									<b>Purpose:</b> Engages users with dynamic visuals and smooth transitions.
+                                </p>
+                            </div>
+                            <div class="tech-used">
+                                <span class="tech-tag">SVG</span>
+                                <span class="tech-tag">CSS Animations</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="splash.html" target="_blank" class="cta-button">View Splash Screen</a>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer Page -->
+                    <div class="task-card">
+                        <h3>Volunteer Page</h3>
+                        <div class="task-preview">
+                            <img src="images/volunteer.png" alt="Volunteer Page Preview">
+                        </div>
+                        <div class="task-details">
+                            <div class="tech-description">
+                                <ul class="bullet-points">
+                                    <li>Interactive form validation</li>
+                                    <li>Country flag integration</li>
+                                    <li>Program cards with hover effects</li>
+                                    <li>Responsive grid layout</li>
+                                </ul>
+                                <p class="full-description">
+                                    <b>HTML:</b> Includes header, nav, sections for programs, ratings, and feedback.
+									<b>CSS:</b> Fixed nav, responsive cards, hover effects, and carousel for reviews.
+									<b>Logic:</b> JavaScript for sticky nav and review carousel.
+									<b>Purpose:</b> Enhances user experience and responsiveness across devices
+                                </p>
+                            </div>
+                            <div class="tech-used">
+                                <span class="tech-tag">CSS Grid</span>
+                                <span class="tech-tag">Form Validation</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="volunteer.html" target="_blank" class="cta-button">Visit Volunteer Page</a>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="task-card">
+                        <h3>Content Page</h3>
+                        <div class="task-preview">
+                            <img src="images/content_1.png" alt="Content Page Preview">
+                        </div>
+                        <div class="task-details">
+                            <div class="tech-description">
+                                <ul class="bullet-points">
+                                    <li>Interactive image galleries</li>
+                                    <li>Collapsible content sections</li>
+                                    <li>Responsive video embeds</li>
+                                    <li>Accessible tab navigation</li>
+                                </ul>
+                                <p class="full-description">
+                                    <b>HTML:</b> Structures content with sections, headings, paragraphs, images, and links.
+									<b>CSS:</b> Styles the page for readability, focusing on typography, spacing, and responsive images.
+									<b>JavaScript:</b> Adds interactivity, like dynamic content loading and section toggling.
+									<b>Purpose:</b> Delivers clear information, engages users, and ensures responsiveness across devices.
+                                </p>
+                            </div>
+                            <div class="tech-used">
+                                <span class="tech-tag">CSS Flexbox</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">ARIA Labels</span>
+                            </div>
+                            <a href="content ST_1.html" target="_blank" class="cta-button">Explore Content Page</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Challenges and Lessons Learned -->
+            <section class="content-card">
+                <h2 class="section-title">💡 Challenges & Lessons Learned</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h4>Cross-Browser Compatibility</h4>
+                        <p>Solved using CSS prefixes and feature detection. Learned importance of progressive enhancement strategies.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Mobile Responsiveness</h4>
+                        <p>Implemented CSS Grid fallbacks. Learned about responsive image techniques and viewport meta tags.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Accessibility Compliance</h4>
+                        <p>Added ARIA labels and keyboard navigation. Learned screen reader testing methodologies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Compliance -->
+            <section class="content-card">
+                <h2 class="section-title">🛡️ Compliance Standards</h2>
+                <div class="compliance-grid">
+                    <div class="standard-card">
+                        <h4>Copyright Compliance</h4>
+                        <p>All images used under Creative Commons licenses with proper attribution in references section.</p>
+                    </div>
+                    <div class="standard-card">
+                        <h4>Content Safety</h4>
+                        <p>Material reviewed for appropriateness with clear content warnings where necessary.</p>
+                    </div>
+                    <div class="standard-card">
+                        <h4>Security Measures</h4>
+                        <p>Implemented HTTPS and input sanitization to prevent injection attacks.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- References -->
+            <section class="content-card">
+                <h2 class="section-title">📚 References</h2>
+                <div class="references-grid">
+                    <!-- Image Sources -->
+                    <div class="reference-category">
+                        <h3 class="reference-title">🖼️ Image Sources</h3>
+                        <div class="reference-list">
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Pixabay</span>
+                                    <span class="reference-year">(2024)</span>
+                                </div>
+                                <em class="reference-desc">Ocean Waves Video</em>
+                                <a href="https://pixabay.com/videos/ocean-sea-waves-view-coast-beach-192057/" 
+                                   class="reference-link" target="_blank">
+                                    pixabay.com/ocean-waves
+                                </a>
+                            </div>
+
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Google Images</span>
+                                    <span class="reference-year">(2024)</span>
+                                </div>
+                                <em class="reference-desc">Turtle Entangled in Plastic</em>
+                                <a href="https://www.google.com/search?q=turtle+entangled+in+plastic" 
+                                   class="reference-link" target="_blank">
+                                    google.com/turtle-plastic
+                                </a>
+                            </div>
+
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Google Images</span>
+                                    <span class="reference-year">(2024)</span>
+                                </div>
+                                <em class="reference-desc">Plastic Waste in Ocean</em>
+                                <a href="https://www.google.com/search?q=plastic+waste+in+ocean" 
+                                   class="reference-link" target="_blank">
+                                    google.com/plastic-waste
+                                </a>
+                            </div>
+
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Google Images</span>
+                                    <span class="reference-year">(2024)</span>
+                                </div>
+                                <em class="reference-desc">Person Sorting Recyclables</em>
+                                <a href="https://www.google.com/search?q=person+sorting+recyclables" 
+                                   class="reference-link" target="_blank">
+                                    google.com/recycling
+                                </a>
+                            </div>
+
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Duckett, J.</span>
+                                    <span class="reference-year">(2011)</span>
+                                </div>
+                                <em class="reference-desc">HTML and CSS: Design and Build Websites</em>
+                                <span class="reference-publisher">John Wiley & Sons, Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical References -->
+                    <div class="reference-category">
+                        <h3 class="reference-title">💻 Technical References</h3>
+                        <div class="reference-list tech-refs">
+                            <a href="https://developer.mozilla.org/" 
+                               class="tech-reference" target="_blank">
+                                MDN Web Docs
+                            </a>
+                            <a href="https://www.w3schools.com/" 
+                               class="tech-reference" target="_blank">
+                                W3Schools
+                            </a>
+                            <a href="https://css-tricks.com/" 
+                               class="tech-reference" target="_blank">
+                                CSS-Tricks
+                            </a>
+                            <a href="https://stackoverflow.com/" 
+                               class="tech-reference" target="_blank">
+                                Stack Overflow
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+		<p class="top"><a href="#top">Go top</a></p>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST1.html">Student 1's editor page</a>
+            <br>
+            <a href="validation_ST1.html">Student 1's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

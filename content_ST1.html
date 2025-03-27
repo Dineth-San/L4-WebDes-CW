@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/content_ST1_styles.css">
+
+    <title>Content Page 1</title>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+    </script>
+
+</head>
+<body>
+     
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+    <main id="IDmain">
+        <article class="wrapper">
+            <div class="image-container" id="top-of-the-page">
+                <div class="student-number">
+                    Plastic Pollution
+                </div>
+                <div class="content-topic">
+                    The Silent Ocean Killer
+                </div>
+                <img src="images/plastic_waste.png" class="content-img" alt="plastic waste in ocean">
+            </div>
+
+            <br><br>
+        
+            <!-- Internal Navigation -->
+            <div class="headings">
+                <h1 id="headings-heading" class="big-heading">Topics</h1>
+                <hr id="headings-hr">
+                <br>
+                <a href="#impact" class="inter-link">Marine Life Impact</a>
+                <br>
+                <a href="#microplastics" class="inter-link">Microplastics Threat</a>
+                <br>
+                <a href="#solutions" class="inter-link">Sustainable Solutions</a>
+                <br>
+                <a href="#individual" class="inter-link">Individual Actions</a>
+            </div>
+
+            <br><br>
+            <hr class="after-topics">
+            <br>
+
+            <div class="content">
+                <!-- Section 1 -->
+                <div class="content1">
+                    <h1 class="big-heading" id="impact">Choking Marine Ecosystems</h1>
+                    <img class="content-images" id="img1" src="images/turtle_plastic.jpg" alt="turtle entangled in plastic">
+                    
+                    <p>Over 8 million tons of plastic enter our oceans annually, creating floating garbage patches twice the size of Texas. Marine animals mistake plastic debris for food, leading to:</p>
+                    <ul>
+                        <li>Internal injuries and intestinal blockages</li>
+                        <li>Starvation despite full stomachs</li>
+                        <li>Entanglement in fishing nets and packaging rings</li>
+                    </ul>
+                    
+                    <p>Sea turtles particularly suffer, with 52% of all specimens found dead having ingested plastic. Coral reefs get smothered by plastic bags, reducing their ability to photosynthesize and support marine biodiversity.</p>
+                </div>
+
+                <hr class="after-topics">
+
+                <!-- Section 2 -->
+                <div class="content2">
+                    <h1  class="big-heading" id="microplastics">The Invisible Threat: Microplastics</h1>
+                    <img class="content-images" id="img2" src="images/microplastics.jpg" alt="microplastic particles under microscope">
+                    
+                    <h2 class="sub-headings">From Ocean to Dinner Plate</h2>
+                    <p>Sunlight and wave action break down plastics into particles smaller than 5mm. These microplastics:</p>
+                    <ul>
+                        <li>Absorb toxic chemicals like PCBs</li>
+                        <li>Enter the food chain through plankton</li>
+                        <li>Accumulate in fish muscle tissue</li>
+                    </ul>
+                    
+                    <p>Humans now consume approximately 5 grams of plastic weekly - equivalent to a credit card's worth. Recent studies found microplastics in human blood and breast milk, with unknown long-term health effects.</p>
+                </div>
+
+                <hr class="after-topics">
+
+                <!-- Section 3 -->
+                <div class="content3">
+                    <h1 class="big-heading" id="solutions">Global Solutions in Action</h1>
+                    <img class="content-images" id="img3" src="images/beachcleaning.png" alt="team cleaning beach">
+                    
+                    <h2 class="sub-headings">Policy & Innovation</h2>
+                    <ul>
+                        <li>UN Plastic Treaty: 175 nations working to eliminate single-use plastics by 2024</li>
+                        <li>Biodegradable alternatives: Mushroom packaging and seaweed-based materials</li>
+                        <li>Ocean cleanup systems: Floating barriers collecting 100,000kg daily</li>
+                    </ul>
+
+                    <h2 class="sub-headings">Corporate Responsibility</h2>
+                    <p>Leading companies are adopting:</p>
+                    <ul>
+                        <li>Closed-loop recycling systems</li>
+                        <li>Water-soluble packaging</li>
+                        <li>Plastic-negative production</li>
+                    </ul>
+                </div>
+
+                <hr class="after-topics">
+
+                <!-- Section 4 -->
+                <div class="content2">
+                    <h1 class="big-heading" id="individual">What You Can Do</h1>
+                    <img class="content-images" id="img4" src="images/recycling.jpg" alt="person sorting recyclables">
+                    
+                    <div class="action-grid">
+                        <div class="action-card">
+                            <h3>♻️ Reduce Single-Use</h3>
+                            <p>Carry reusable bags, bottles, and utensils</p>
+                        </div>
+                        <div class="action-card">
+                            <h3>🏖️ Join Cleanups</h3>
+                            <p>Participate in local beach/river cleanup events</p>
+                        </div>
+                        <div class="action-card">
+                            <h3>🗳️ Demand Change</h3>
+                            <p>Support plastic-reduction policies</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+		<p class="top"><a href="#top">Go top</a></p>
+    </main>
+
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST1.html">Student 1's editor page</a>
+            <br>
+            <a href="validation_ST1.html">Student 1's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

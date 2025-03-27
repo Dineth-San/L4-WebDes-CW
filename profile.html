@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/globalCSS.css" />
+    <link rel="stylesheet" href="styles/profile_styles.css" />
+
+    <title>User profile</title>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let navInHeader = document.getElementById("nav-in-header");
+        let imgInNav = document.getElementById("img-in-nav");
+        let IDmain = document.getElementById("IDmain");
+        let sc = window.scrollY;
+        if (sc > 140) {
+          IDmain.style.marginTop = "60px";
+          imgInNav.style.transition = "0.1s ease-in-out";
+          imgInNav.style.opacity = 1;
+          navInHeader.style.top = 0;
+          navInHeader.style.position = "fixed";
+        } else {
+          IDmain.style.marginTop = "0px";
+          imgInNav.style.opacity = 0;
+          navInHeader.style.position = "relative";
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <br>
+      <div id="header-div">
+          <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+          <div class="space1"></div>
+          <h1 id="heading1">Life Below Water</h1>
+      </div>
+      <br>
+      <nav id="nav-in-header">
+          <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+          <span class="nav-link"><a href="home.html">Home</a></span>
+          <span class="nav-link"><a href="team.html">Team</a></span>
+          <span class="nav-link"><a href="table.html">Table</a></span>
+          <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+          <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+          <span class="nav-link active-page"><a href="profile.html">User Profile</a></span>
+          <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+      </nav>
+  </header>
+
+    <!--from here the user profile starts-->
+    <main id="IDmain">
+      <article class="wrapper">
+        <section class="userprofilesection">
+          <h1 class="big-heading">User Profile</h1>
+        </section>
+        <!--from here the user profile starts-->
+
+        <div class="container">
+          <div class="column">
+            <div class="card card-1">
+              <img class="dp" src="images/dp.png" alt="profile picture" />
+              <h2 class="big-heading" id="heading-name">Savindu John</h2>
+              <p class="p1">
+                " In the ocean of life, I'm a curious adventurer, exploring
+                uncharted waters with a heart full of wonder 🌊 "
+              </p>
+              <div class="userdetails">
+                <p>
+                  <strong>Name&nbsp;&nbsp;&nbsp; - </strong
+                  >&nbsp;&nbsp;&nbsp;Savindu John
+                </p>
+                <p>
+                  <strong>Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- </strong>
+                  &nbsp;&nbsp;&nbsp;20
+                </p>
+                <p><strong>Location - </strong>&nbsp;&nbsp;&nbsp;Sri Lanka</p>
+              </div>
+              <div class="description">
+                <h4 class="desc-heading big-heading">Description</h4>
+                <p class="p2">
+                  Savindu John is a dedicated student passionate about marine
+                  conservation and the United Nations Sustainable Development
+                  Goals, specifically SDG 14, Life Below Water. He actively
+                  volunteers in projects to preserve our oceans and marine
+                  resources, collaborating with local and international
+                  organizations to promote sustainable practices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card card-2">
+              <h2 class="card-2 heading big-heading">Volunteer Availability</h2>
+              <table class="calendar">
+                <thead>
+                  <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td class="available">2</td>
+                    <td class="available">3</td>
+                  </tr>
+                  <tr>
+                    <td class="available">4</td>
+                    <td>5</td>
+                    <td class="available">6</td>
+                    <td>7</td>
+                    <td class="available">8</td>
+                    <td>9</td>
+                    <td class="available">10</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td class="available">12</td>
+                    <td>13</td>
+                    <td class="available">14</td>
+                    <td>15</td>
+                    <td class="available">16</td>
+                    <td class="available">17</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td class="available">19</td>
+                    <td>20</td>
+                    <td class="available">21</td>
+                    <td>22</td>
+                    <td class="available">23</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td class="available">25</td>
+                    <td>26</td>
+                    <td class="available">27</td>
+                    <td class="available">28</td>
+                    <td>29</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card card-3">
+              <h2 class="big-heading">Experience</h2>
+              <ul>
+                <li>
+                  <strong>Junior Scuba Diver Certification (2021)</strong>
+                  Completed an open water diving course, gaining hands-on
+                  experience in observing marine ecosystems and understanding
+                  the importance of ocean conservation.
+                </li>
+                <li>
+                  <strong>Marine Biology Workshop (2023)</strong> Attended a
+                  youth marine conservation program where I learned about coral
+                  reef restoration, sustainable fishing, and the impact of
+                  climate change on oceans.
+                </li>
+              </ul>
+            </div>
+            <div class="card card-4">
+              <h2 class="big-heading">Skills</h2>
+              <br />
+              <ul>
+                <li>
+                  <span class="heading">Team Working</span>
+                  <div class="skill-bar"></div>
+                  <div class="skill-level1"></div>
+                </li>
+                <li>
+                  <span class="heading">Communication</span>
+                  <div class="skill-bar"></div>
+                  <div class="skill-level2"></div>
+                </li>
+                <li>
+                  <span class="heading">Problem Solving</span>
+                  <div class="skill-bar"></div>
+                  <div class="skill-level3"></div>
+                </li>
+                <li>
+                  <span class="heading">Leadership</span>
+                  <div class="skill-bar"></div>
+                  <div class="skill-level4"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card card-5">
+              <h2 class="big-heading">Volunteer activities</h2>
+              <ul>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="Beach clean-up icon"
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/beachcleanup.jpeg"
+                    alt="Beach cleanup activity"
+                    class="icon"
+                  />&nbsp;&nbsp;Beach clean up campaigns
+                </li>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="Coral Reef Restoration Projects"
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/coralprojects.jpeg"
+                    alt="Coral Reef Restoration Projects"
+                    class="icon"
+                  />&nbsp;&nbsp;Coral Reef Restoration &nbsp;&nbsp;Projects
+                </li>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="Sustainable Fishing Awareness Campaigns"
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/fishing.jpeg"
+                    alt="Sustainable Fishing Awareness Campaigns"
+                    class="icon"
+                  />&nbsp;&nbsp;Sustainable Fishing &nbsp;&nbsp;Awareness
+                  Campaigns
+                </li>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="sea turtle conservation"
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/sea_turtle.jpeg"
+                    alt="sea turtle conservation"
+                    class="icon"
+                  />&nbsp;&nbsp; Sea Turtle Conservation
+                  &nbsp;&nbsp;&nbsp;Programs
+                </li>
+              </ul>
+            </div>
+
+            <!-- interests section -->
+            <div class="card card-6">
+              <h2 class="big-heading">My interests</h2>
+              <ul>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="Exploring Marine Life "
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/marinelife.jpeg"
+                    alt="Exploring Marine Life"
+                    class="icon"
+                  />&nbsp;&nbsp;Exploring Marine Life
+                </li>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="Aquarium Keeping & Fish Care"
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/aquarium.jpeg"
+                    alt="Aquarium Keeping & Fish Care"
+                    class="icon"
+                  />&nbsp;&nbsp;Aquarium Keeping & Fish &nbsp;&nbsp;Care
+                </li>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="Surfing & Water Sports"
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/surfing.jpeg"
+                    alt="Surfing & Water Sports"
+                    class="icon"
+                  />&nbsp;&nbsp;Surfing & Water Sports
+                </li>
+                <li>
+                  <span
+                    class="-icon-interest"
+                    aria-label="Learning About Sharks & Whales"
+                  ></span>
+                  <img
+                    width="80"
+                    height="80"
+                    src="images/shark.png"
+                    alt="Learning About Sharks & Whales"
+                    class="icon"
+                  />&nbsp;&nbsp; Learning About Sharks &
+                  &nbsp;&nbsp;&nbsp;Whales
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- card-7 -->
+        <div class="container" id="bottom-container">
+          <div class="card card-7">
+            <div class="contactme">
+              <h2 class="contactme big-heading">Contact Me</h2>
+              <form action="server.php" method="get">
+                <label class="form-label" for="name">Name: </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter name here"
+                  maxlength="40"
+                />
+
+                <label class="form-label" for="email">email: </label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter e-mail"
+                  maxlength="40"
+                />
+
+                <label class="form-label" for="message">Message: </label>
+                <textarea
+                  class="form-input"
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message..."
+                  maxlength="200"
+                  rows="4"
+                ></textarea>
+
+                <div class="submit-container">
+                  <input type="submit" value="Submit" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!--footer-->
+
+    <footer>
+      <div class="footer-div">
+        <img class="logo" src="images/web_CW_logo.png" alt="logo" />
+        <br />
+        <h2 id="footer-heading">Life Below Water</h2>
+      </div>
+      <div class="footer-div">
+        <h3>Editor's pages</h3>
+        <hr />
+        <br />
+        <a href="pageEditor_ST4.html">Student 4's editor page</a>
+        <br />
+        <a href="validation_ST4.html">Student 4's validation page</a>
+      </div>
+      <div class="footer-div">
+        <h3>Useful Links</h3>
+        <hr />
+        <br />
+        <a href="home.html">Home page</a>
+        <br />
+        <a href="team.html">Team page</a>
+        <br />
+        <a href="sitemap.html">Sitemap</a>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <div class="space2">&nbsp;</div>
+      <div class="socials-circle">
+        <a href="https://www.twitter.com/">
+          <img class="socials" src="images/x_logo.png" alt="x" />
+        </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+        <a href="https://www.facebook.com/">
+          <img
+            class="socials"
+            src="images/facebook_logo.png"
+            alt="facebook"
+          />
+        </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+        <a href="https://www.twitter.com/">
+          <img
+            class="socials"
+            src="images/twitter_logo.png"
+            alt="twitter"
+          />
+        </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+        <a href="https://www.instagram.com/">
+          <img
+            class="socials"
+            src="images/instagram_logo.png"
+            alt="instagram"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

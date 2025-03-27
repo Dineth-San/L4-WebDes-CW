@@ -1,0 +1,323 @@
+/* colors when needed.
+    #1a3e5d - dark blue
+    #4b8da8 - blue
+    #a3d6d9 - light blue
+    #e1f6f4 - very light blue
+    white and black
+*/
+html {
+    scroll-padding-top: 75px;
+}
+.big-heading{
+    font-size: 34px;
+    color: #1a3e5d;
+    justify-content: center;
+    text-align: center;
+}
+
+.introduction{
+    display: flex;
+    width: 75%;
+    margin-left: 12.5%; 
+    height: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(50, 77, 199, 0.4);
+    border-radius: 10px;
+    transition: 2s;
+}
+#intro-logo{
+    width: 500px;
+    aspect-ratio: 1/1;
+}
+#landing {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 200;
+}
+
+#landing-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.landing-content {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding-top: 503px;
+    padding-bottom: 500px;
+    padding-left: 500px;
+    padding-right: 490px;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+#intro-button{
+    box-shadow: none;
+}
+
+.landing-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.landing-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #1a3e5d; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: black; 
+}
+.introduction:hover{
+    width: 85%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 7.5%;
+    transition: 2s;
+}
+#motto-text{
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image-div{
+    right: 0;    
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-top: 2.5%;
+}
+.text-div{
+    text-align: left;
+    width: 50%;
+    margin-right: 10%;
+    height: 100%;
+    align-content: center;
+}
+#about-us{
+    width: 100%;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+#about-us-logo{
+    width: 400px;
+    aspect-ratio: 1/1;
+}
+.about-us-container{
+    display: flex;
+    width: 100%;
+    margin-left: 7.5%;
+    align-items: center;
+    height: 400px;
+}
+.about-us-text{
+    font-size: 20px;
+}
+#about-us-heading{
+    color: #4b8da8;
+    text-align: left;
+}
+
+
+
+
+
+.mission {
+    display: flex;
+    width: 85%;
+    margin-left: 7.5%;
+    height: 60%;
+    padding-bottom: 5%;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 28%;
+    margin-left: 2%;
+    text-align: center;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mission-image {
+    width: 80%;
+    border-radius: 8px;
+    margin: 10px 0;
+    aspect-ratio: 1/0.75;
+}
+
+.program-description {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.view-project {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    background-color: #4b8da8;
+    color: white;
+}
+
+.view-project:hover {
+    background-color: #1a3e5d;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+#section2{
+    background-color: white;
+    padding-bottom: 10%;
+    padding-top: 2.5%;
+}
+#cover-tile{
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 3%;
+    background-color: #ededed;
+    border-radius: 20px;
+}
+.container1{
+    margin-top: 60px;
+    display: flex;
+    padding-left: 16%;
+    width: 100%;
+}
+
+.student-card{
+    width: 30%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.student-image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+}
+#content-page-headings{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.student-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 62, 93, 0.6); 
+    transform: scaleY(0); 
+    transform-origin: bottom;
+    transition: transform 0.5s ease-in-out;
+    z-index: 0; 
+}
+
+.student-card:hover::before {
+    transform: scaleY(1); 
+}
+
+.banner {
+    position: absolute;
+    bottom: 0;
+    background-color: #a3d6d9;
+    padding: 10px;
+    width: 92.4%;
+    transform-origin: bottom;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.student-card:hover .banner {
+    opacity: 1;
+    transform: scale(3);
+}
+.banner > a{
+    color: #4b8da8;
+    font-weight: bold;
+}
+
+
+
+
+

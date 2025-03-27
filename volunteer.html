@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/volunteer_styles.css">
+    <title>Volunteer Page</title>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+    </script>
+
+</head>
+<body>
+     
+    <!-- copy paste the header part -->
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link active-page"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+    <main id="IDmain">
+        <article class="wrapper">
+			<section id="landing">
+				<div class="landing-content">
+					<h1>Join Our Volunteering Community</h1>
+					<p>Make a difference by participating in our various volunteering programs. Explore opportunities, share your experiences, and contribute to meaningful causes.</p>
+					<a href="#scrollable-info" class="cta-button">Explore Programs</a>
+				</div>
+			</section>
+
+			<!-- Volunteer Programs Section -->
+			<section id="scrollable-info">
+				<h2>Explore Volunteering Programs</h2>
+				<div class="filters">
+					<span>301 volunteer programs found</span>
+					<span>Matching with 1 filter</span>
+					<select>
+						<option>Most Popular</option>
+						<option>Newest</option>
+						<option>Highest Rated</option>
+					</select>
+				</div>
+				<div class="cards-container">
+					<!-- Card 1 -->
+					<div class="cards-container">
+						<!-- Nepal -->
+						<div class="card">
+							<div class="card-header">
+								<div class="country-info">
+									<img src="images/nepalflag.png" alt="Nepal Flag" class="country-logo">
+									<span class="country-name">Nepal</span>
+								</div>
+								<button class="like-button">❤️</button>
+							</div>
+							<h1>Freshwater Conservation in Nepal</h1>
+							<img src="images/volunteer1.jpg" alt="Freshwater Conservation in Nepal" class="program-image">
+							<div class="program-details">
+								<div class="detail"><span class="icon">🌱</span><span>Protects freshwater ecosystems</span></div>
+								<div class="detail"><span class="icon">⏰</span><span>4-6 hours volunteering per day</span></div>
+							</div>
+							<div class="duration-age">
+								<span>Duration: 2-12 weeks</span>
+								<span>Volunteers aged 18+ only</span>
+							</div>
+							<table class="fee-table">
+								<tr><th>Duration</th><th>Program Fee</th></tr>
+								<tr><td>2 weeks</td><td>£500</td></tr>
+							</table>
+							<p class="program-description">
+								Assist in restoring freshwater sources, preventing pollution, and educating locals about clean water conservation.
+							</p>
+							<div class="card-buttons">
+								<button class="view-project">VIEW PROJECT</button>
+								<button class="apply">APPLY</button>
+							</div>
+						</div>
+
+						<!-- Tanzania -->
+						<div class="card">
+							<div class="card-header">
+								<div class="country-info">
+									<img src="images/tanzaniaflag.png" alt="Tanzania Flag" class="country-logo">
+									<span class="country-name">Tanzania</span>
+								</div>
+								<button class="like-button">❤️</button>
+							</div>
+							<h1>Marine Wildlife Protection in Tanzania</h1>
+							<img src="images/volunteer2.jpg" alt="Marine Wildlife Protection in Tanzania" class="program-image">
+							<div class="program-details">
+								<div class="detail"><span class="icon">🐢</span><span>Protects sea turtles and marine life</span></div>
+								<div class="detail"><span class="icon">⏰</span><span>5-7 hours volunteering per day</span></div>
+							</div>
+							<div class="duration-age">
+								<span>Duration: 1-8 weeks</span>
+								<span>Volunteers aged 16+ and families</span>
+							</div>
+							<table class="fee-table">
+								<tr><th>Duration</th><th>Program Fee</th></tr>
+								<tr><td>2 weeks</td><td>£600</td></tr>
+							</table>
+							<p class="program-description">
+								Help protect endangered marine wildlife, assist in rescue operations, and contribute to habitat conservation efforts.
+							</p>
+							<div class="card-buttons">
+								<button class="view-project">VIEW PROJECT</button>
+								<button class="apply">APPLY</button>
+							</div>
+						</div>
+
+						<!-- South Africa -->
+						<div class="card">
+							<div class="card-header">
+								<div class="country-info">
+									<img src="images/SouthAfricaflag.png" alt="South Africa Flag" class="country-logo">
+									<span class="country-name">South Africa</span>
+								</div>
+								<button class="like-button">❤️</button>
+							</div>
+							<h1>Ocean Plastic Awareness in South Africa</h1>
+							<img src="images/volunteer3.png" alt="Ocean Plastic Awareness in South Africa" class="program-image">
+							<div class="program-details">
+								<div class="detail"><span class="icon">🌊</span><span>Fights plastic pollution</span></div>
+								<div class="detail"><span class="icon">⏰</span><span>3-6 hours volunteering per day</span></div>
+							</div>
+							<div class="duration-age">
+								<span>Duration: 2-10 weeks</span>
+								<span>Volunteers aged 18+ only</span>
+							</div>
+							<table class="fee-table">
+								<tr><th>Duration</th><th>Program Fee</th></tr>
+								<tr><td>2 weeks</td><td>£480</td></tr>
+							</table>
+							<p class="program-description">
+								Conduct cleanups, educate locals on reducing plastic waste, and advocate for ocean-friendly policies.
+							</p>
+							<div class="card-buttons">
+								<button class="view-project">VIEW PROJECT</button>
+								<button class="apply">APPLY</button>
+							</div>
+						</div>
+
+						<!-- Ukraine -->
+						<div class="card">
+							<div class="card-header">
+								<div class="country-info">
+									<img src="images/Ukraineflag.png" alt="Ukraine Flag" class="country-logo">
+									<span class="country-name">Ukraine</span>
+								</div>
+								<button class="like-button">❤️</button>
+							</div>
+							<h1>Eco-Friendly Fishing Initiatives in Ukraine</h1>
+							<img src="images/volunteer4.jpg" alt="Eco-Friendly Fishing in Ukraine" class="program-image">
+							<div class="program-details">
+								<div class="detail"><span class="icon">🎣</span><span>Promotes sustainable fishing</span></div>
+								<div class="detail"><span class="icon">⏰</span><span>4-8 hours volunteering per day</span></div>
+							</div>
+							<div class="duration-age">
+								<span>Duration: 1-6 weeks</span>
+								<span>Volunteers aged 18+ only</span>
+							</div>
+							<table class="fee-table">
+								<tr><th>Duration</th><th>Program Fee</th></tr>
+								<tr><td>2 weeks</td><td>£550</td></tr>
+							</table>
+							<p class="program-description">
+								Assist in educating fishermen about sustainable fishing methods, preventing overfishing, and conserving marine biodiversity.
+							</p>
+							<div class="card-buttons">
+								<button class="view-project">VIEW PROJECT</button>
+								<button class="apply">APPLY</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Add more cards as needed -->
+				</div>
+				<div class="pagination">
+					<span>Showing 1 to 20 of 301 results</span>
+					<button>Previous</button>
+					<button>Next</button>
+				</div>
+			</section>
+			<!-- User Ratings and Reviews Section -->
+			<section id="user-ratings">
+				<h2>User Ratings and Reviews</h2>
+				<div class="rating-summary">
+					<span class="rating">9.4/10</span>
+					<span class="rating-level">Exceptional</span>
+					<span class="total-reviews">Based on 120 reviews</span>
+				</div>
+				<div class="carousel-container">
+					<button class="carousel-arrow left-arrow">&#10094;</button>
+					<div class="reviews-carousel">
+						<!-- Review Card 1 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 1" class="reviewer-pfp">
+									<span class="reviewer-name">Emily Carter</span>
+								</div>
+								<div class="star-rating">★★★★★</div>
+							</div>
+							<p class="review-description">
+								An absolutely life-changing experience! The people were kind, and the program was well-organized. I felt like I truly made an impact.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Jan 10, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 2 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 2" class="reviewer-pfp">
+									<span class="reviewer-name">Michael Smith</span>
+								</div>
+								<div class="star-rating">★★★★☆</div>
+							</div>
+							<p class="review-description">
+								The trip was fantastic, but I wish there was more preparation material beforehand. Overall, an unforgettable journey.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Jan 25, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 3 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 3" class="reviewer-pfp">
+									<span class="reviewer-name">Sophia Reynolds</span>
+								</div>
+								<div class="star-rating">★★★★★</div>
+							</div>
+							<p class="review-description">
+								Volunteering in Nepal was eye-opening. The cultural exchange and friendships I made will stay with me forever.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Feb 5, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 4 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 4" class="reviewer-pfp">
+									<span class="reviewer-name">David Johnson</span>
+								</div>
+								<div class="star-rating">★★★★☆</div>
+							</div>
+							<p class="review-description">
+								A wonderful opportunity to give back. The locals were welcoming, and the staff was very supportive.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Feb 15, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 5 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 5" class="reviewer-pfp">
+									<span class="reviewer-name">Olivia Martinez</span>
+								</div>
+								<div class="star-rating">★★★★★</div>
+							</div>
+							<p class="review-description">
+								I was nervous at first, but the experience exceeded my expectations. It felt great to be part of something meaningful.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Feb 22, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 6 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 6" class="reviewer-pfp">
+									<span class="reviewer-name">James Wilson</span>
+								</div>
+								<div class="star-rating">★★★★★</div>
+							</div>
+							<p class="review-description">
+								If you’re thinking about joining, don’t hesitate! The connections and memories you’ll create are priceless.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Mar 3, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 7 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 7" class="reviewer-pfp">
+									<span class="reviewer-name">Isabella Thompson</span>
+								</div>
+								<div class="star-rating">★★★★★</div>
+							</div>
+							<p class="review-description">
+								I loved every moment! The activities were fulfilling, and the friendships I made will last a lifetime.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Mar 10, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 8 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 8" class="reviewer-pfp">
+									<span class="reviewer-name">Benjamin Clark</span>
+								</div>
+								<div class="star-rating">★★★★☆</div>
+							</div>
+							<p class="review-description">
+								I wish I had more time there! The experience was fulfilling, and I’d definitely volunteer again.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Mar 18, 2025</span>
+							</div>
+						</div>
+
+						<!-- Review Card 9 -->
+						<div class="review-card">
+							<div class="review-header">
+								<div class="reviewer-info">
+									<img src="images/userprofile.png" alt="Reviewer 9" class="reviewer-pfp">
+									<span class="reviewer-name">Charlotte Lewis</span>
+								</div>
+								<div class="star-rating">★★★★★</div>
+							</div>
+							<p class="review-description">
+								This program changed my perspective on life. I learned so much from the locals and my fellow volunteers.
+								<a href="#" class="see-more">See More</a>
+							</p>
+							<div class="review-footer">
+								<span class="review-date">Mar 25, 2025</span>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-arrow right-arrow">&#10095;</button>
+				</div>
+
+			</section>
+			<!-- Add this new section ABOVE the footer in new 1.html -->
+			<section id="review-section" class="sticky-section">
+				<div class="review-container">
+					<h2>Send us your review</h2>
+					<p class="subtitle">Got suggestions? We'd love to hear them! (Optional)</p>
+					
+					<form id="feedback-form">
+						<div class="form-group">
+							<textarea 
+								placeholder="Your feedback..." 
+								rows="5"
+								class="feedback-input"
+							></textarea>
+						</div>
+						
+						<div class="form-links">
+							<a href="#">Privacy Policy</a>
+							<a href="#">Help Center</a>
+						</div>
+						
+						<div class="form-buttons">
+							<button type="submit" class="submit-btn">Send Feedback</button>
+							<button type="button" class="cancel-btn">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</article>
+	</main>
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST1.html">Student 1's editor page</a>
+            <br>
+            <a href="validation_ST1.html">Student 1's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+<script src="javascript.js"></script>
+</body>
+</html>

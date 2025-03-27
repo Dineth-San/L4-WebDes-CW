@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/pageEditor_ST3_styles.css">
+    <title>Editor Page</title>
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+ 
+
+    <main id="IDmain">
+        <article class="editor-container">
+            <!-- Profile Header -->
+            <section class="profile-header">
+                <div class="profile-content">
+                    <h3>Himasara Liyanage</h3>
+                    <h2>Student 3 - Editor's Page</h2>
+                </div>
+            </section>
+
+            <!-- Completed Tasks -->
+            <section class="content-card">
+                <h2 class="section-title">📋 Completed Tasks</h2>
+                <div class="task-grid">
+                    <!-- feedback-->
+                    <div class="task-card">
+                        <h3>Feedback form</h3>
+                        <div class="task-preview">
+                            <img src="images/feedback.png" alt="Feedback form preview">
+                        </div>
+                        <div class="task-details">
+                            <div class="tech-description">
+                                <ul class="bullet-points">
+                                    <li>🎥 Smooth Form Field Animations</li>
+                                    <li>🎨 Dynamic Placeholder Styling</li>
+                                    <li>✅ Form Validation Animation</li>
+                                    <li>🌀 Interactive Button Effects</li>
+                                    <li>⏰ Auto Date & Time Display</li>
+                                    <li>🌊 Floating Form Design</li>
+                                </ul>
+                                <p class="full-description">
+                                    <b>HTML:</b> Clean feedback form with input fields, ratings, and a submit button for easy navigation.
+									<b>CSS: </b> Responsive design with smooth animations, modern styling, and clear typography.
+									<b>Logic:</b> Form validation, real-time feedback, and confirmation messages for a seamless experience.
+									<b>Purpose:</b> Efficiently captures user feedback with a polished and engaging interface.
+                                </p>
+                            </div>
+                            <div class="tech-used">
+                                <span class="tech-tag">🛠 HTML5</span>
+                                <span class="tech-tag">🎨 CSS3</span>
+                                <span class="tech-tag">⚡JavaScript</span>
+                                <span class="tech-tag">🎥 CSS Animations</span>
+                                <span class="tech-tag">🖼 SVG Icons</span>
+                            </div>
+                            <a href="form-page.html" target="_blank" class="cta-button">View Feedback form</a>
+                        </div>
+                    </div>
+
+                    <!-- Team Page -->
+                    <div class="task-card">
+                        <h3>Team Page</h3>
+                        <div class="task-preview">
+                            <img src="images/teampage.png" alt="Team Page Preview">
+                        </div>
+                        <div class="task-details">
+                            <div class="tech-description">
+                                <ul class="bullet-points">
+                                    <li>🌀 Hover Effects</li>
+                                    <li>🎥 Smooth Animations</li>
+                                    <li>🎨 Gradient Background</li>
+                                    <li>🖼 Image Presentation</li>
+                                    <li>🌀 Dark Overlay Effect</li>
+                                    <li>🎥 Smooth Animations</li>
+                                    <li>📝 Responsive Design</li>
+                                    <li>🖼 Image Presentation</li>
+                                </ul>
+                                <p class="full-description">
+                                    <b>HTML:</b> Team showcase with profile cards, role descriptions, and implemented pages
+									<b>CSS:</b> Responsive grid layout with smooth hover animations, soft shadows, and modern styling.
+									<b>Logic:</b> Interactive cards with focus and hover effects revealing detailed team info.
+									<b>Purpose:</b> Highlights team members’ contributions with a polished and user-friendly interface.
+                                </p>
+                            </div>
+                            <div class="tech-used">
+                                <span class="tech-tag">🛠 HTML</span>
+                                <span class="tech-tag">🎨 CSS</span>
+                                <span class="tech-tag">⚡ JavaScript</span>
+                            </div>
+                            <a href="team-page.html" target="_blank" class="cta-button">Visit Team page</a>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="task-card">
+                        <h3>Content Page</h3>
+                        <div class="task-preview">
+                            <img src="images/content.png" alt="Content Page Preview">
+                        </div>
+                        <div class="task-details">
+                            <div class="tech-description">
+                                <ul class="bullet-points">
+                                    <li>🖥️ Fixed Navigation Bar</li>
+                                    <li>🎨 Gradient Background</li>
+                                    <li>🖼️ Image Presentation</li>
+                                    <li>🌀 Hover Effects</li>
+                                    <li>🎥 Smooth Animations</li>
+                                    <li>📱 Responsive Design</li>
+                                    <li>🔄 Scroll-based Interaction</li>
+                                    <li>📝 Readability Focused</li>
+                                </ul>
+                                <p class="full-description">
+                                    <b>HTML:</b> Structured to match Content Page 3, featuring headings, paragraphs, and images that explain the dangers of overfishing.
+									<b>CSS:</b> Responsive design with smooth transitions, soft shadows, and a clean, modern layout.
+									<b>JavaScript:</b> Interactive elements like hover effects and structured content for easy readability and engagement.
+									<b>Purpose:</b> Educates users on overfishing with a polished, user-friendly, and visually appealing interface.
+                                </p>
+                            </div>
+                            <div class="tech-used">
+                                <span class="tech-tag">🛠 HTML</span>
+                                <span class="tech-tag">⚡JavaScript</span>
+                                <span class="tech-tag">🎨 CSS</span>
+                            </div>
+                            <a href="content03.html" target="_blank" class="cta-button">Explore Content Page</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Challenges and Lessons Learned -->
+            <section class="content-card">
+                <h2 class="section-title">💡 Challenges & Lessons Learned</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h4>Cross-Browser Compatibility</h4>
+                        <p>Solved using CSS prefixes and feature detection. Learned importance of progressive enhancement strategies.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Mobile Responsiveness</h4>
+                        <p>Implemented CSS Grid fallbacks. Learned about responsive image techniques and viewport meta tags.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <h4>Accessibility Compliance</h4>
+                        <p>Added ARIA labels and keyboard navigation. Learned screen reader testing methodologies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Compliance -->
+            <section class="content-card">
+                <h2 class="section-title">🛡️ Compliance Standards</h2>
+                <div class="compliance-grid">
+                    <div class="standard-card">
+                        <h4>Copyright Compliance</h4>
+                        <p>All images used under Creative Commons licenses with proper attribution in references section.</p>
+                    </div>
+                    <div class="standard-card">
+                        <h4>Content Safety</h4>
+                        <p>Material reviewed for appropriateness with clear content warnings where necessary.</p>
+                    </div>
+                    <div class="standard-card">
+                        <h4>Security Measures</h4>
+                        <p>Implemented HTTPS and input sanitization to prevent injection attacks.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- References -->
+            <section class="content-card">
+                <h2 class="section-title">📚 References</h2>
+                <div class="references-grid">
+                    <!-- Image Sources -->
+                    <div class="reference-category">
+                        <h3 class="reference-title">🖼️ Image Sources</h3>
+                        <div class="reference-list">
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Ocean Tides</span>
+                                    <span class="reference-year">(2022)</span>
+                                </div>
+                                <em class="reference-desc">Sea bed photo</em>
+                                <a href=https://www.sciencing.com/destruction-marine-ecosystem-5777/
+                                   class="reference-link" target="_blank">
+                                   sciencing.com/destruction-marine-ecosystem
+                                </a>
+                            </div>
+
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Fact Sheet</span>
+                                    <span class="reference-year">(2013)</span>
+                                </div>
+                                <em class="reference-desc">School of fish</em>
+                                <a href="https://www.pewtrusts.org/en/research-and-analysis/fact-sheets/2013/09/25/forage-fish-faq" 
+                                   class="reference-link" target="_blank">
+                                   pewtrusts.org/en/research
+                                </a>
+                            </div>
+
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author"> Jennifer Idol</span>
+                                    <span class="reference-year">(2019)</span>
+                                </div>
+                                <em class="reference-desc">Coral Restoration Foundation Makes Waves</em>
+                                <a href="https://www.divephotoguide.com/underwater-photography-special-features/article/visions-hope-coral-restoration-foundation-makes-waves/" 
+                                   class="reference-link" target="_blank">
+                                   divephotoguide.com/underwater
+                                </a>
+                            </div>
+
+
+                            <div class="reference-item">
+                                <div class="reference-meta">
+                                    <span class="reference-author">Duckett, J.</span>
+                                    <span class="reference-year">(2011)</span>
+                                </div>
+                                <em class="reference-desc">HTML and CSS: Design and Build Websites</em>
+                                <span class="reference-publisher">John Wiley & Sons, Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical References -->
+                    <div class="reference-category">
+                        <h3 class="reference-title">💻 Technical References</h3>
+                        <div class="reference-list tech-refs">
+                            <a href="https://developer.mozilla.org/" 
+                               class="tech-reference" target="_blank">
+                                MDN Web Docs
+                            </a>
+                            <a href="https://www.w3schools.com/" 
+                               class="tech-reference" target="_blank">
+                                W3Schools
+                            </a>
+                            <a href="https://css-tricks.com/" 
+                               class="tech-reference" target="_blank">
+                                CSS-Tricks
+                            </a>
+                            <a href="https://stackoverflow.com/" 
+                               class="tech-reference" target="_blank">
+                                Stack Overflow
+                            </a>
+                            <a href="https://html.spec.whatwg.org/multipage/" 
+                               class="tech-reference" target="_blank">
+                               W3C (World Wide Web Consortium) 
+                            </a>
+                            <a href="https://caniuse.com/" 
+                               class="tech-reference" target="_blank">
+                               Can I Use
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST3.html">Student 3's editor page</a>
+            <br>
+            <a href="validation_ST3.html">Student 3's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

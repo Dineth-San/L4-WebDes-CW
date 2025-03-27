@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/globalCSS.css">
+    <link rel="stylesheet" href="styles/table_styles.css">
+
+    <title>Table Page</title>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link"><a href="team.html">Team</a></span>
+            <span class="nav-link active-page"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+
+
+    <main id="IDmain">
+        <article class="wrapper">
+            <br><br>
+            <div class="table-container">
+                <h1 class="big-heading">Protecting Life Below Water</h1>
+                <table>
+
+
+                    <tr>
+                        <th id="logo-col-header">
+                            <img class="logo" src="images/web_CW_logo.png" alt="Logo">
+                        </th>
+                        <th>Marine Issue
+                        </th>
+                        <th>Impact Level</th>
+                        <th>Main Cause</th>
+                        <th class="corner-column">Solutions</th>
+                    </tr>
+                    
+
+                    <tr>
+                        <td class="thumbnail-td">
+                            <div class="tooltip">
+                                <span class="tooltiptext">The loss of coral color due to warm waters, weakening marine ecosystems.</span>
+                                <img class="thumbnail-img" aria-label="Coral bleaching: Rising ocean temperatures cause corals to lose their color and weaken, harming marine ecosystems." src="images/seabed.jpg" alt="Coral Bleaching">
+                            </div>
+                        </td>
+                        <td>Coral Bleaching</td>
+                        <td id="low">Low &#x1F7E2;</td>
+                        <td><a href="#">Rising ocean temperatures</a></td>
+                        <td class="corner-column">Reduce CO<sub>2</sub> emissions, protect reefs</td>
+                    </tr>
+                    <tr>
+                        <td class="thumbnail-td">
+                            <div class="tooltip">
+                                <span class="tooltiptext">The loss of mangrove forests, impacting coastal ecosystems and wildlife.</span>
+                                <img class="thumbnail-img" aria-label="Mangrove destruction: Coastal development and deforestation are reducing mangrove forests, which protect shorelines and support marine life." src="images/mangrove.jpg" alt="Mangroves">
+                            </div>
+                        </td>
+                        <td>Mangrove Destruction</td>
+                        <td rowspan="2" id="medium">Medium &#x1F7E1;</td>
+                        <td><a href="#">Coastal Development</a></td>
+                        <td class="corner-column">Protect and restore mangrove forests</td>
+                    </tr>
+                    <tr>
+                        <td class="thumbnail-td">
+                            <div class="tooltip">
+                                <span class="tooltiptext">The release of oil into oceans, causing long-term environmental damage.</span>
+                                <img class="thumbnail-img" aria-label="Oil spilling: Accidental spills from ships and pipelines release toxic oil into the ocean, killing marine life and polluting water." src="images/oil-spills.jpg" alt="Oil Spills">
+                            </div>
+                        </td>
+                        <td>Oil Spilling</td>
+                        <td><a href="#">Shipping accidents, drilling</a></td>
+                        <td class="corner-column">Strengthen spill response regulations</td>
+
+                    </tr>
+                    <tr>
+                        <td class="thumbnail-td">
+                            <div class="tooltip">
+                                <span class="tooltiptext">The accumulation of plastic waste in oceans, endangering marine creatures.</span>
+                                <img class="thumbnail-img" aria-label="Plastic pollution: Millions of tons of plastic waste enter the ocean yearly, harming marine animals and contaminating water." src="images/plastic-garbage.jpg" alt="Plastic Garbage">
+                            </div>
+                            </td>
+                        <td>Plastic Pollution</td>
+                        <td rowspan="4" id="high">High &#x1F534;</td>
+                        <td><a href="#">Improper waste disposal</a></td>
+                        <td class="corner-column">Reduce single-use plastics, improve waste management</td>
+                    </tr>
+                    <tr>
+                        <td class="thumbnail-td">
+                            <div class="tooltip">
+                                <span class="tooltiptext">Increased carbon dioxide in oceans, harming marine life and coral reefs.</span>
+                                <img class="thumbnail-img" aria-label="Ocean acidification: Absorption of excess carbon dioxide lowers ocean pH, making it harder for marine creatures to build shells and survive." src="images/power-station.jpg" alt="Ocean Acidification">
+                            </div>
+                        </td>
+                        <td>Ocean Acidification</td>
+                        <td><a href="#">CO<sub>2</sub> absorption from the atmosphere</a></td>
+                        <td class="corner-column">Reduce carbon emissions, protect marine life</td>
+                    </tr>
+                    <tr>
+                        <td class="thumbnail-td">
+                            <div class="tooltip">
+                                <span class="tooltiptext">The melting of ice in the Arctic due to rising temperatures, threatening ecosystems.</span>
+                                <img class="thumbnail-img" aria-label="Arctic ice melt: Rising global temperatures are causing polar ice to shrink, disrupting marine habitats and increasing sea levels." src="images/winter.jpg" alt="Ice Melt">
+                            </div>
+                        </td>
+                        <td>Arctic Ice Melt</td>
+                        <td rowspan="2"><a href="#">Global warming</a></td>
+                        <td class="corner-column">Reduce fossil fuel consumption</td>
+                    </tr>
+                    <tr>
+                        <td class="thumbnail-td">
+                            <div class="tooltip">
+                                <span class="tooltiptext">The increase in water temperature warms oceans, harming marine life.</span>
+                                <img class="thumbnail-img" aria-label="Increasing ocean temperature: Climate change is warming the ocean, leading to coral bleaching, marine species migration, and stronger storms." src="images/temperature.png" alt="Ice Melt">
+                            </div>
+                            </td>
+                        <td>Increase of Water Temperature</td>
+                        <td class="corner-column">Reduce greenhouse gas emissions</td>
+                    </tr>
+
+
+                </table>
+            </div>
+            <br><br>
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST2.html">Student 2's editor page</a>
+            <br>
+            <a href="validation_ST2.html">Student 2's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

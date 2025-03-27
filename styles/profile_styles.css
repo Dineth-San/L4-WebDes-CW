@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+.userprofilesection{
+    text-align: center;
+    padding: 26px 20px;
+    background-color:white;
+    font-size: 27pt;
+}
+/* container-the big box which includes all 7 cards */
+.container {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    display: flex;
+    margin-top: 2%;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(40, 40, 40, 0.4);
+    border-radius: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: -5%;
+    padding-left: -5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* common styles for 3 columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+}
+
+/* this card property will add common styles for all cards */
+.card {
+    background-color: #e1f6f4b8;
+    border: 1px solid #00000000; 
+    border-radius: 10px;
+    padding: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this to make the card a positioned ancestor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    border: 1px solid black;
+}
+.card:hover{
+    transform: scale(1.05);
+    z-index: 999;
+}
+
+.dp {
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.393);
+    position: absolute; /* Position the image absolutely */
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+}
+
+.card-1 {
+    width: 80%;
+    height: 1030px;
+    margin-left: 7%;
+    margin-top: 0px;
+}
+#heading-name{
+    color: #1a3e5d;
+    margin-top: 300px;
+    text-align:center;
+    font-size: 28pt;
+}
+.p1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
+    margin: 10px;
+}
+.userdetails {
+    background-color: #a3d6d982;
+    text-align: left;
+    text-indent: 15px;
+    word-spacing: 2px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    outline: 2px solid rgba(34, 34, 34, 0);
+    padding: 1px;
+}
+.description h4{
+    font-size: 18pt;
+}
+.description{
+    padding: 15px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.714);
+    font-size: 12pt;
+}
+
+.card-2 {
+    width: 90%;
+    right: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    top: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card-2-heading {
+    color: rgb(95, 149, 203);
+    text-align: center;
+    text-shadow: 0 5px 10px #231d13;
+}
+
+.calendar {
+    margin-top: 20px;
+    width: 90%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+.calendar th, .calendar td {
+    width: 14.2%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: #1a3e5d;
+}
+
+.calendar th {
+    background-color: rgba(10, 10, 10, 0.486);
+}
+
+.available {
+    background-color: #4b8da8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.available:hover {
+    background-color: #a3d6d9;
+    transition: 0.2s ease-in-out;
+}
+.card-3{
+    width: 90% ;
+    right: 20px;
+    height: 300px;
+}
+.card-4, .card-3, .card-2{
+    margin-top:20px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+.card-3 ul{
+    margin-top: 30px;
+}.card-3 li{
+    font-size: 12pt;
+}
+/* card-4 */
+
+.card-4{
+    width: 90%;
+    right: 20px;
+}
+.card card-4:hover{
+    transform: scale(1.05);
+}
+
+.card card-4 h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: -5px;
+}
+
+.card-4-heading{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.skill-bar {
+    height: 7px;
+    width: 330px;
+    background-color: #4b8ea84b;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.skill-level1{
+    height: 8px;
+    background-color:#1a3e5d;
+    border-radius: 3px; /* Round the corners on the left side */
+    margin-top: -8.3px;
+    width: 60%;
+    animation: fillskill1 1s ease-in-out;
+}
+
+@keyframes fillskill1 {
+    from { width: 0; }
+    to { width: 60%; }
+}
+.skill-level2{
+    height: 8px;
+    background-color:#1a3e5d;
+    border-radius: 3px; /* Round the corners on the left side */
+    margin-top: -8.3px;
+    width: 40%;
+    animation: fillskill2 1s ease-in-out;
+}
+    
+    @keyframes fillskill2 {
+        from { width: 0; }
+        to { width: 40%; }
+    }
+.skill-level3{
+    height: 8px;
+    background-color:#1a3e5d;
+    border-radius: 3px; /* Round the corners on the left side */
+    margin-top: -8.3px;
+    width: 60%;
+    animation: fillskill3 1s ease-in-out;
+}
+
+    @keyframes fillskill3 {
+        from { width: 0; }
+        to { width: 60%; }
+    }
+.skill-level4{
+    height: 8px;
+    background-color:#1a3e5d;
+    border-radius: 3px; /* Round the corners on the left side */
+    margin-top: -8.3px;
+    width: 50%;
+    animation: fillskill4 1s ease-in-out;
+}
+
+    @keyframes fillskill4 {
+        from { width: 0; }
+        to { width: 50%; }
+    }
+/* cards 5,6 and 7 - shifted to left */
+.card-5, .card-6 {
+    margin-left: -80px;
+}
+.card-5{
+    width: 90%;
+    height: auto;
+    top:6px;
+    margin-top: 10px;
+}
+.card-5 ul{
+    list-style-type:none;
+    padding: 0;
+}
+.card-5 li{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 13pt;
+    color: #000000;
+    margin-left: 20px;
+}
+.card-5 .icon{
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* card-6 */
+.card-6{
+    width: 90%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.card-6 ul{
+    list-style-type:none;
+    padding: 0;
+}
+.card-6 li{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 13pt;
+    color: #000000;
+    margin-left: 20px;
+}
+.card-6 .icon{
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-7{
+    width:80% ;
+    padding: 0;
+    left: 10%;
+}
+.contactme {
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 2%;
+    text-align: left;
+    margin: 15px;
+
+}
+
+#bottom-container{
+    margin-bottom: 50px;
+}
+
+
+.form-label{
+    display:flex;
+    margin-top: -5px;
+    margin-bottom: 1px;
+    font-weight: normal;
+    color: black;
+    margin-left: 10px;
+    font-size: 12pt;
+
+}
+.form-input{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.131);
+    background-color: rgba(255, 255, 255, 0.115);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    color:black;
+}
+
+.form-input::placeholder{
+    color: black;
+    opacity:0.6 ;
+}
+.form-input:focus{
+    border-color: black;
+    outline: none;
+    opacity: 1;
+}
+.submit-container{
+    display:flex;
+    justify-content: flex-start;
+    margin-left: 500px;
+    margin-top: -40px;
+    width: 100%;
+}
+input[type="submit"]{
+    display: inline-block;
+    width: auto;
+    min-width: 70px;
+    padding: 15px;
+    background-color: rgba(255, 235, 189, 0);
+    color: black;
+    border: none;
+    border-radius: 14px;
+    cursor:pointer;
+    font-size: 11pt;
+    border:1px solid #0000004f;
+}
+
+input[type="submit"]:hover {
+    background-color: #cef1ff;
+    outline: 1px solid #1a3e5d;
+}
+.big-heading{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.socials{
+    top: 0;
+}

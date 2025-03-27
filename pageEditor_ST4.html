@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/globalCSS.css" />
+    <link rel="stylesheet" href="styles/pageEditor_ST4_styles.css" />
+    <title>Editor Page</title>
+    <script>
+      window.addEventListener("scroll", function () {
+        let navInHeader = document.getElementById("nav-in-header");
+        let imgInNav = document.getElementById("img-in-nav");
+        let IDmain = document.getElementById("IDmain");
+        let sc = window.scrollY;
+        if (sc > 140) {
+          IDmain.style.marginTop = "60px";
+          imgInNav.style.transition = "0.1s ease-in-out";
+          imgInNav.style.opacity = 1;
+          navInHeader.style.top = 0;
+          navInHeader.style.position = "fixed";
+        } else {
+          IDmain.style.marginTop = "0px";
+          imgInNav.style.opacity = 0;
+          navInHeader.style.position = "relative";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <br>
+      <div id="header-div">
+          <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+          <div class="space1"></div>
+          <h1 id="heading1">Life Below Water</h1>
+      </div>
+      <br>
+      <nav id="nav-in-header">
+          <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+          <span class="nav-link"><a href="home.html">Home</a></span>
+          <span class="nav-link"><a href="team.html">Team</a></span>
+          <span class="nav-link"><a href="table.html">Table</a></span>
+          <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+          <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+          <span class="nav-link"><a href="profile.html">User Profile</a></span>
+          <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+      </nav>
+  </header>
+
+    <main id="IDmain">
+      <article class="editor-container">
+        <!-- Profile Header -->
+        <section class="profile-header">
+          <div class="profile-content">
+            <h3>Savindu John</h3>
+            <h2>Student 4 - Editor's Page</h2>
+          </div>
+        </section>
+
+        <!-- Completed Tasks -->
+        <section class="content-card">
+          <h2 class="section-title">📋 Completed Tasks</h2>
+          <div class="task-grid">
+            <!-- user profile -->
+            <div class="task-card">
+              <h3>User profile</h3>
+              <div class="task-preview">
+                <img
+                  src="images/userprofile_st4.png"
+                  alt="User profile Preview"
+                />
+              </div>
+              <div class="task-details">
+                <div class="tech-description">
+                  <ul class="bullet-points">
+                    <li>Modern Layout Techniques</li>
+                    <li>Pop-In Animation with Scaling</li>
+                    <li>Dynamic Grid Layouts</li>
+                    <li>Interactive Tags with Hover Effects</li>
+                  </ul>
+                  <p class="full-description">
+                    <b>HTML:</b> User profile layout with a two-column structure
+                    for personal details, volunteer availability, experience,
+                    skills, and interests. Includes interactive cards and a
+                    contact form.</br><b>CSS:</b> Uses linear-gradient backgrounds,
+                    @keyframes animations (fadeIn, slideIn, popIn), and
+                    hover-triggered transitions for dynamic effects like
+                    description swaps and scaling.</br><b>Logic:</b>
+                    Animations and hover effects are triggered dynamically, with
+                    content (e.g., full descriptions) revealed on interaction.
+                    </br>
+                    <b>Purpose:</b> Engages users with visually appealing,
+                    interactive, and responsive design, making the profile
+                    informative and dynamic.
+                  </p>
+                </div>
+                <div class="tech-used">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS Styling</span>
+                </div>
+                <a href="user profile.html" target="_blank" class="cta-button"
+                  >View User profile</a
+                >
+              </div>
+            </div>
+
+            <!-- sitemap -->
+            <div class="task-card">
+              <h3>Sitemap</h3>
+              <div class="task-preview">
+                <img src="images/sitemap_st4.png" alt="Site map Preview" />
+              </div>
+              <div class="task-details">
+                <div class="tech-description">
+                  <ul class="bullet-points">
+                    <li>SVG-Based Sitemap</li>
+                    <li>Clickable Nodes with Links</li>
+                    <li>Dynamic Lines and Connections</li>
+                    <li>Scalable and Responsive Design</li>
+                  </ul>
+                  <p class="full-description">
+                    <b>HTML:</b> Includes a structured layout with an
+                    interactive SVG-based sitemap, using rect, line, and text
+                    elements for nodes, connections, and labels.<br />
+                  </br><b>CSS:</b> Styles the sitemap with custom classes for nodes
+                    (.node, .sub-node) and lines, ensuring a clean and visually
+                    appealing design.</br></br><b>Logic:</b> Uses "a" tags to make nodes
+                    clickable, enabling seamless navigation to different
+                    pages.</br></br><b>Purpose:</b> Provides an interactive and scalable
+                    visual representation of the website’s structure, enhancing
+                    user navigation and experience.
+                  </p>
+                </div>
+                <div class="tech-used">
+                  <span class="tech-tag">SVG</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS styling</span>
+                </div>
+                <a href="sitemap.html" target="_blank" class="cta-button"
+                  >Visit Sitemap</a
+                >
+              </div>
+            </div>
+
+            <!-- Content Page -->
+            <div class="task-card">
+              <h3>Content Page</h3>
+              <div class="task-preview">
+                <img
+                  src="images/content_page_st4.png"
+                  alt="content page - student 4 preview"
+                />
+              </div>
+              <div class="task-details">
+                <div class="tech-description">
+                  <ul class="bullet-points">
+                    <li>Darkened Image Overlay with Topic Title</li>
+                    <li>Internal Anchor Links for Navigation</li>
+                    <li>Image-Text Integration</li>
+                    <li>Structured Content with Subheadings and Lists</li>
+                  </ul>
+                  <p class="full-description">
+                    <b>HTML:</b>Structured content sections with headings, images, and paragraphs about mangrove forests. Includes internal links for easy navigation.</br>
+
+                    <b>CSS:</b> Styles the page with a darkened image overlay, responsive design, and hover effects for interactive links. Custom classes (e.g., .content-images, .topics) ensure consistent styling for text and images.</br>
+                    
+                    <b>Logic:</b>Internal anchor links (a href="#topic1") enable smooth scrolling to specific sections, improving user navigation.</br>
+                    
+                    <b>Purpose:</b>Delivers an informative and visually engaging page about mangrove forests, optimized for readability and navigation.</br>
+
+                  </p>
+                </div>
+                <div class="tech-used">
+                  <span class="tech-tag">CSS Flexbox</span>
+                  <span class="tech-tag">HTML</span>
+                </div>
+                <a href="content_ST4.html" target="_blank" class="cta-button"
+                  >Explore Content Page</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Challenges and Lessons Learned -->
+        <section class="content-card">
+          <h2 class="section-title">💡 Challenges & Lessons Learned</h2>
+          <div class="challenges-grid">
+            <div class="challenge-card">
+              <h4>Cross-Browser Compatibility</h4>
+              <p>
+                Use CSS media queries to adjust font sizes, image dimensions, and layout structures for different screen sizes. Test the page on various devices to ensure consistency.
+              </p>
+            </div>
+            <div class="challenge-card">
+              <h4>Responsiveness Issues</h4>
+              <p>
+                Implemented CSS Grid fallbacks. Learned about responsive image
+                techniques and viewport meta tags.
+              </p>
+            </div>
+            <div class="challenge-card">
+              <h4>Accessibility Compliance</h4>
+              <p>
+                Added ARIA labels and keyboard navigation. Learned screen reader
+                testing methodologies.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Compliance -->
+        <section class="content-card">
+          <h2 class="section-title">🛡️ Compliance Standards</h2>
+          <div class="compliance-grid">
+            <div class="standard-card">
+              <h4>Copyright Compliance</h4>
+              <p>
+                All images used under Creative Commons licenses with proper
+                attribution in references section.
+              </p>
+            </div>
+            <div class="standard-card">
+              <h4>Content Safety</h4>
+              <p>
+                Material reviewed for appropriateness with clear content
+                warnings where necessary.
+              </p>
+            </div>
+            <div class="standard-card">
+              <h4>Security Measures</h4>
+              <p>
+                Implemented HTTPS and input sanitization to prevent injection
+                attacks.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- References -->
+        <section class="content-card">
+          <h2 class="section-title">📚 References</h2>
+          <div class="references-grid">
+            <!-- Image Sources -->
+            <div class="reference-category">
+              <h3 class="reference-title">🖼️ Image Sources</h3>
+              <div class="reference-list">
+                <div class="reference-item">
+                  <div class="reference-meta">
+                    <span class="reference-author">DALL-E.(2025)</span>
+                    <span class="reference-year"></span>
+                  </div>
+                  <em class="reference-desc">mangroves in clear water</em>
+                  <a
+                    href="https://openai.com/index/dall-e-3/"
+                    class="reference-link"
+                    target="_blank"
+                  >
+                  DALL-E. (2025, March 14). [Digital image]. OpenAI.
+                  </a>
+                </div>
+
+                <div class="reference-item">
+                  <div class="reference-meta">
+                    <span class="reference-author">DALL-E.(2025)</span>
+                    <span class="reference-year"></span>
+                  </div>
+                  <em class="reference-desc">mangroves </em>
+                  <a
+                    href="https://openai.com/index/dall-e-3/"
+                    class="reference-link"
+                    target="_blank"
+                  >
+                  DALL-E. (2025, March 14). [Digital image]. OpenAI.
+                  </a>
+                </div>
+
+                <div class="reference-item">
+                  <div class="reference-meta">
+                    <span class="reference-author">DALL-E.(2025)</span>
+                    <span class="reference-year"></span>
+                  </div>
+                  <em class="reference-desc">deforestation of mangroves</em>
+                  <a
+                    href="https://openai.com/index/dall-e-3/"
+                    class="reference-link"
+                    target="_blank"
+                  >
+                  DALL-E. (2025, March 14). [Digital image]. OpenAI.
+                  </a>
+                </div>
+
+                <div class="reference-item">
+                  <div class="reference-meta">
+                    <span class="reference-author">DALL-E.(2025)</span>
+                    <span class="reference-year"></span>
+                  </div>
+                  <em class="reference-desc">eco system of mangroves</em>
+                  <a
+                    href="https://openai.com/index/dall-e-3/"
+                    class="reference-link"
+                    target="_blank"
+                  >
+                  DALL-E. (2025, March 14). [Digital image]. OpenAI.
+                  </a>
+                </div>
+
+
+              </div>
+            </div>
+
+            <!-- Technical References -->
+            <div class="reference-category">
+              <h3 class="reference-title">💻 Technical References</h3>
+              <div class="reference-list tech-refs">
+                <a
+                  href="https://developer.mozilla.org/"
+                  class="tech-reference"
+                  target="_blank"
+                >
+                  MDN Web Docs
+                </a>
+                <a
+                  href="https://www.w3schools.com/"
+                  class="tech-reference"
+                  target="_blank"
+                >
+                  W3Schools
+                </a>
+                <a
+                  href="https://css-tricks.com/"
+                  class="tech-reference"
+                  target="_blank"
+                >
+                  CSS-Tricks
+                </a>
+                <a
+                  href="https://stackoverflow.com/"
+                  class="tech-reference"
+                  target="_blank"
+                >
+                  Stack Overflow
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--  FOOTER  -->
+
+    <footer>
+      <div class="footer-div">
+          <img class="logo" src="images/web_CW_logo.png" alt="logo">
+          <br>
+          <h2 id="footer-heading">Life Below Water</h2>
+      </div>
+      <div class="footer-div">
+          <h3>Editor's pages</h3>
+          <hr>
+          <br>
+          <a href="pageEditor_ST4.html">Student 4's editor page</a>
+          <br>
+          <a href="validation_ST4.html">Student 4's validation page</a>
+      </div>
+      <div class="footer-div">
+          <h3>Useful Links</h3>
+          <hr>
+          <br>
+          <a href="home.html">Home page</a>
+          <br>
+          <a href="team.html">Team page</a>
+          <br>
+          <a href="sitemap.html">Sitemap</a>
+      </div>
+  </footer>
+  
+  <div class="footer-bottom">
+      <div class="space2">&nbsp;</div>
+      <div class="socials-circle">
+          <a href="https://www.twitter.com/">
+              <img class="socials" src="images/x_logo.png" alt="x">
+          </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+          <a href="https://www.facebook.com/">
+              <img class="socials" src="images/facebook_logo.png" alt="facebook">
+          </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+          <a href="https://www.twitter.com/">
+              <img class="socials" src="images/twitter_logo.png" alt="twitter">
+          </a>
+      </div>
+      &nbsp;
+      <div class="socials-circle">
+          <a href="https://www.instagram.com/">
+              <img class="socials" src="images/instagram_logo.png" alt="instagram">
+          </a>
+      </div>
+  </div>
+  </body>
+</html>
+

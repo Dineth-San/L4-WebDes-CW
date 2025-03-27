@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/globalCSS.css">
+	<link rel="stylesheet" href="styles/team_styles.css">
+    <title>Team page</title>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navInHeader = document.getElementById("nav-in-header");
+            let imgInNav = document.getElementById("img-in-nav");
+            let IDmain = document.getElementById("IDmain");
+            let sc = window.scrollY;
+            if (sc > 140){
+                IDmain.style.marginTop = "60px";
+                imgInNav.style.transition =  "0.1s ease-in-out";
+                imgInNav.style.opacity = 1;
+                navInHeader.style.top = 0;
+                navInHeader.style.position = "fixed";
+            }
+            else{
+                IDmain.style.marginTop = "0px";
+                imgInNav.style.opacity = 0;
+                navInHeader.style.position = "relative";
+            }
+        });
+
+        document.querySelectorAll(".card-wrapper").forEach((card) => {
+            card.addEventListener("focusin", function() {
+                this.setAttribute("aria-expanded", "true");
+            });
+            card.addEventListener("focusout", function() {
+                this.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
+
+</head>
+<body>
+     
+    <header>
+        <br>
+        <div id="header-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="LOGO">
+            <div class="space1"></div>
+            <h1 id="heading1">Life Below Water</h1>
+        </div>
+        <br>
+        <nav id="nav-in-header">
+            <img src="images/web_CW_logo.png" id="img-in-nav" alt="logo">
+            <span class="nav-link"><a href="home.html">Home</a></span>
+            <span class="nav-link active-page"><a href="team.html">Team</a></span>
+            <span class="nav-link"><a href="table.html">Table</a></span>
+            <span class="nav-link"><a href="volunteer.html">Volunteer</a></span>
+            <span class="nav-link"><a href="feedback.html">Feedback</a></span>
+            <span class="nav-link"><a href="profile.html">User Profile</a></span>
+            <span class="nav-link"><a href="sitemap.html">Sitemap</a></span>
+        </nav>
+    </header>
+ 
+
+    <main id="IDmain">
+        <article class="wrapper">
+
+    <section class="about-section">
+        <h4 class="big-heading">Our Team</h4>
+        <p class="about-description">Learn about the team! Hover over the images for details.</p>
+    </section>
+
+    <div class="container" tabindex="-1">
+        <div class="card-wrapper">
+            <div tabindex="1" aria-expanded="false" class="student-card" role="region">
+                <img class="student-image" src="images/teamphotos/Randil.jpg" alt="Randil">
+            </div>
+            <div class="banner">
+                <p class="banner-title">Randil</p>
+                <p class="bsub-title">Role: Student 01</p>
+                <p class="bsub-title">Implemented pages:</p>
+                <ul class="bdetails">
+                    <li>Splash Screen</li>
+                    <li>Volunteer page</li>
+                    <li>Content page 01</li>
+                    <li>pageEditor</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div tabindex="2" aria-expanded="false" class="student-card" role="region">
+                <img class="student-image" src="images/teamphotos/Dineth.jpg" alt="Dineth">
+            </div>
+            <div class="banner">
+                <p class="banner-title">Dineth</p>
+                <p class="bsub-title">Role: Student 02</p>
+                <p class="bsub-title">Implemented pages:</p>
+                <ul class="bdetails">
+                    <li>Home Page</li>
+                    <li>Table</li>
+                    <li>Content page 02</li>
+                    <li>pageEditor</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div tabindex="3" aria-expanded="false" class="student-card" role="region">
+                <img class="student-image" src="images/teamphotos/Himasara.png" alt="Himasara">
+            </div>
+            <div class="banner">
+                <p class="banner-title">Himasara</p>
+                <p class="bsub-title">Role: Student 03</p>
+                <p class="bsub-title">Implemented pages:</p>
+                <ul class="bdetails">
+                    <li>Feedback form</li>
+                    <li>Team page</li>
+                    <li>Content page 03</li>
+                    <li>pageEditor</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div tabindex="4" aria-expanded="false" class="student-card" role="region">
+                <img class="student-image" src="images/teamphotos/Savindu.jpg" alt="Savindu">
+            </div>
+            <div class="banner">
+                <p class="banner-title">Savindu</p>
+                <p class="bsub-title">Role: Student 04</p>
+                <p class="bsub-title">Implemented pages:</p>
+                <ul class="bdetails">
+                    <li>User Profile</li>
+                    <li>Sitemap</li>
+                    <li>Content page 04</li>
+                    <li>pageEditor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	</article>
+	</main>
+
+    <footer>
+        <div class="footer-div">
+            <img class="logo" src="images/web_CW_logo.png" alt="logo">
+            <br>
+            <h2 id="footer-heading">Life Below Water</h2>
+        </div>
+        <div class="footer-div">
+            <h3>Editor's pages</h3>
+            <hr>
+            <br>
+            <a href="pageEditor_ST3.html">Student 3's editor page</a>
+            <br>
+            <a href="validation_ST3.html">Student 3's validation page</a>
+        </div>
+        <div class="footer-div">
+            <h3>Useful Links</h3>
+            <hr>
+            <br>
+            <a href="home.html">Home page</a>
+            <br>
+            <a href="team.html">Team page</a>
+            <br>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="space2">&nbsp;</div>
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/x_logo.png" alt="x">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.facebook.com/">
+                <img class="socials" src="images/facebook_logo.png" alt="facebook">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.twitter.com/">
+                <img class="socials" src="images/twitter_logo.png" alt="twitter">
+            </a>
+        </div>
+        &nbsp;
+        <div class="socials-circle">
+            <a href="https://www.instagram.com/">
+                <img class="socials" src="images/instagram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
